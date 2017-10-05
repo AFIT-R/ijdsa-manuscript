@@ -1,0 +1,78 @@
+Boehmke, B. C. (2016). Data wrangling with R (Vol. 1). Springer International Publishing.
+Boehmke, B. C., & Hazen, B. T. (2017). The future of supply chain information systems: The open source ecosystem. Global Journal of Flexible Systems Management , (pre-print).
+Boehmke, B. C., & Jackson, R. A. (2016). Unpacking the true cost of "free" statistical software. OR/MS Today , 43 (1).
+Boehmke, B. C., Montgomery, R. T., Ogden, J. A., & Freels, J. K. (2017). KraljicMatrix: An R package for implementing the Kraljic Matrix to strategically analyze a firm's purchasing portfolio. Journal of Open Source Software , 2 (10), 2017.
+Buvik, A., & Reve, T. (2001). Asymmetrical deployment of specific assets and contractual safeguarding in industrial purchasing relationships. Journal of Business Research , 51 (2), 101-113.
+Chen, D. Q., Preston, D. S., & Swink, M. (2015). How the use of big data analytics affects value creation in supply chain management. Journal of Management Information Systems , 32 (4), 4-39.
+Chen, I. J., Paulraj, A., & Lado, A. A. (2004). Strategic purchasing, supply management, and firm performance. Journal of Operations Management , 22 (5), 505-523.
+Chen, P. C., & Zhang, C.-Y. (2014). Data-intensive applications, challenges, techniques and technologies: A survey on Big Data. Information Sciences , 275, 314-347.
+Davenport, T. H., & Patil, D. J. (2012). Data scientist. Harvard Business Review , 90 (5), 70-76.
+Davenport, T. H., Barth, P., & Bean, R. (2012). How big data is different. MIT Sloan Management Review , 54 (1), 43.
+Dillon-Merrill, R. L., Parnell, G. S., Buckshaw, D. L., Hensley, W. R., & Caswell, D. J. (2008). Avoiding common pitfalls in decision support frameworks for Department of Defense analyses. Military Operations Research , 13 (2), 19-31.
+Doig, C. (2017). The Journey to Open Data Science. Continuum Analytics.
+Donoho, D. (2015). 50 years of data science. Tukey Centennial Workshop. Princeton, NJ: MIT.
+Dubey, R., & Gunasekaran, A. (2015). Education and training for successful career in Big Data and Business Analytics. Industrial and Commercial Training , 47 (4), 174-181.
+Dubois, A., & Pederson, A. (2002). Why relationships do not fit into purchasing portfolio models; a comparison between the portfolio and ndustrial network approaches. Eur. J. of Purch. & Supply Manag. , 8, 35-42.
+Dyer, J., Cho, D., & Chu, W. (1998). Strategic supplier segmentation: The next "best practice" in supply chaing management. Calif. Manag. Rev. , 40, 57.
+Fosso Wamba, S., Akter, S., Edwards, A., Chopin, G., & Gnanzou, D. (2015). How 'big data' can make big impact: Findings from a systematic review and a longitudinal case study. International Journal of Production Economics , 165, 234-246.
+Gandomi, A., & Murtaza, H. (2015). Beyond the hype: Big data concepts, methods, and analytics. International Journal of Information Management , 35 (2), 137-144.
+GAO. (2012). Strategic Sourcing: Improved and Expanded Use Could Save Billions in Annual Procurement Costs. Washington, D.C.: General Accountability Office.
+GAO. (2015). Strategic Sourcing: Opportunities Exist to Better Manage Information Technology Services Spending. Washington, D.C.: Government Accountability Office.
+Gelderman, C. J., & Van Weele, A. J. (2003). Handling measurement issues and strategic directions in Kraljic's purchasing portfolio model. Journal of purchasing and supply management , 9 (5), 207-216.
+Gelderman, C., & MacDonald, D. (2008). Application of Kraljic's purchasing portfolio matrix in an undeveloped logistics infrastructure: The staatsolie suriname case. J. of Transnatl. Manag. , 13, 77-92.
+Gelderman, C., & Semeijn, J. (2006). Managing the global supply base through purchasing portfolio management. J. of Purch. and Supply Manag. , 12, 209-217.
+Gelderman, C., & Van Weele, A. (2003). Handling measurement issues and strategic direction in krljic's purchasing portfolio model. J. of Purch. and Supply Manag. , 9, 207-216.
+Gelderman, C., & Van Weele, A. (2005). Purchasing portfolio madels: a critique and update. J. of Supply Chain Manag. , 41, 19-28.
+Gelderman, C., & Van Weele, A. (2002). Strategic direction through purchasing portfolio management: a case study. J. of Supply Chain Manag. , 38, 30-37.
+George, G., & Haas, M. R. (2014). Big data and management. Academy of Management Journal , 57 (2), 321-326.
+Gorman, M. F., & Klimberg, R. K. (2014). Benchmarking academic programs in business analytics. Interfaces , 44 (3), 329-341.
+Hazen, B. T., Boone, C. A., Ezell, J. D., & Jones-Farmer, L. A. (2014). Data quality for data science, predictive analytics, and big data in supply chain management: An introduction to the problem and suggestions for research and applications. International Journal of Production Economics , 154, 72-80.
+Hazen, B. T., Skipper, J. B., Boone, C. A., & Hill, R. R. (2016). Back in business: Operations research in support of big data analytics for operations and supply chain management. Annals of Operations Research , 1-11.
+Huizingh, E. K. (2011). Open innovation: State of the art and future perspectives. Technovation , 31 (1), 2-9.
+Kamann, D.-J. F. (2007). Organizational design in public procurement: a stakeholder approach. Journal of Purchasing and Supply Management , 13 (2), 127-136.
+Keeney, R., & Raiffa, H. (1993). Decisions with multiple objectives: preferences and value trade-offs. Cambridge University Press.
+Knight, L., Tu, Y., & Preston, J. (2014). Integrating skills profiling and purchasing portfolio management: An opportunity for building purchasing capability. Int. J. of Prod. Econ. , 147, 271-283.
+Kraljic, P. (1983). Purchasing must become supply management. Harv. Bus. Rev. , 61, 109-117.
+Lamming, R. C., Caldwell, N. D., Harrison, D. A., & Phillips, W. (2001). Transparency in supply relationships: concept and practice. Journal of Supply Chain Management , 37 (3), 4-10.
+Larnder, H. (1984). The origin of operational research. Operations Research , 32 (2), 465-476.
+Lee, D., & Drake, P. (2010). A portfolio model for component purchasing strategy and the case study of two south korean elevator manufacturers. Int. J. of Prod. Res. , 48, 6651-6682.
+Lerner, J., & Tirole, J. (2002). Some simple economics of open source. The Journal of Industrial Economics , 50 (2), 197-234.
+Leventhal, B., & Langdell, S. (2013). Adding value to business applications with embedded advanced analytics. Journal of Marketing Analytics , 1 (2), 64-70.
+Lilliecreutz, J., & Ydreskog, L. (1999). Supplier classification as an enabler for a differentiated purchasing strategy. Glob. Purch. & Supply Manag. , November, 66-74.
+Lilliecreutz, J., & Ydreskog, L. (2001). Supplier classification as an enabler for a differentiated purchasing strategy. Best Practice Prcure.: Pub. and Private Sect. Perspect. , 8, 73-81.
+Liu, X., & Xu, J. (2008). Research on the purchasing portfolio approach for steel industry. 7th World Congress on Intelligent Control and Automation, 2008. WCICA 2008 (pp. 4911-4916). IEEE.
+Manyika, J., Chui, M., Brown, B., Bughin, J., Dobbs, R., Roxburgh, C., et al. (2012). Big data: The next frontier for innovation, competition, and productivity. McKinsey Global Institute.
+McAfee, A., & Brynjolfsson, E. (2012). Big data: The management revolution. Harvard Business Review , 90 (10), 61-67.
+Mota, J., & de Castro, L. M. (2005). Relationship portfolios and capability development: Cases from the moulds industry. Journal of Purchasing and Supply Management , 11 (1), 42-54.
+Nellore, R., & Söderquist, K. (2000). Portfolio approaches to procurement: Analysing the missing link to specifications. Long Range Plan. , 33, 245-267.
+Oh, L.-B., Teo, H.-H., & Sambamurthy, V. (2012). The effects of retail channel integration through the use of information technologies on firm performance. Journal of Operations Management , 30 (5), 368-381.
+Olsen, R., & Ellram, L. (1997). A portfolio approach to supplier relationships. Ind. Mark. Manag. , 26, 101-113.
+O'Mahony, S. (2003). Guarding the commons: how community managed software projects protect their work. Research Policy , 32 (7), 1179-1198.
+Padhi, S. S., Wagner, S. M., & Aggarwal, V. (2012). Positioning of commodities using the Kraljic Portfolio Matrix. Journal of Purchasing and Supply Management , 18 (1), 1-8.
+Parnell, G., Bresnick, T., Tani, S., & Johnson, E. (2013). Handbook of Decision Analysis (Vol. 6). John Wiley & Sons.
+Power, D. J. (2014). Using 'Big Data' for analytics and decision support. Journal of Decision Systems , 23 (2), 222-228.
+Provost, F., & Fawcett, T. (2013). Data Science for Business: What you need to know about data mining and data-analytic thinking. O'Reilly Media, Inc.
+R Core Team. (2017). R: A language and environment for statistical computing. Vienna, Austria: R Foundation for Statistical Computing.
+Ramsay, J. (1994). Purchasing power. European Journal of Purchasing & Supply Management , 1 (3), 125-138.
+Richey, R. G., Morgan, T. R., Hall, K. L., & Adams, F. G. (2016). A global exploration of big data in the supply chain. International Journal of Physical Distribution & Logistics Management , 46 (8).
+Schoenherr, T., & Speier-Pero, C. (2015). Data science, predictive analytics, and big data in supply chain management: Current state and future potential. Journal of Business Logistics , 36 (1), 120-132.
+Simpson, D., Meredith, J., Boyer, K., Dilts, D., Ellram, L. M., & Leong, G. K. (2015). Professional, research, and publishing trends in operations and supply chain management. Journal of Supply Chain Management , 51 (3), 87-100.
+Trkman, P., McCormack, K., De Oliveira, M. P., & Ladeira, M. B. (2010). The impact of business analytics on supply chain performance. Decision Support Systems , 49 (3), 318-327.
+Tryggvason, E., & Johansen, J. (1996). The ‘double matrix’business process model and a framework model for analysis and design of logistic systems. European Journal of Purchasing & Supply Management , 2 (4), 203-209.
+Von Hippel, E. (2009). Democratizing innovation: the evolving phenomenon of user innovation. International Journal of Innovation Science , 1 (1), 29-40.
+Wagner, S. M., & Johnson, J. L. (2004). Configuring and managing strategic supplier portfolios. Industrial Marketing Management , 33 (8), 717-730.
+Waller, M. A., & Fawcett, S. E. (2013). Click here for a data scientist: Big data, predictive analytics, and theory development in the era of a maker movement supply chain. Journal of Business Logistics , 34 (4), 249-252.
+Waller, M. A., & Fawcett, S. E. (2013). Data science, predictive analytics, and big data: A revolution that will transform supply chain design and management. Journal of Business Logistics , 34 (2), 77-84.
+Wamba, S. F., Akter, S., Edwards, A., Chopin, G., & Gnanzou, D. (2015). Wamba, S. F., Akter, S., Edwards, A., Chopin, G., & Gnanzou, D. (2015). How ‘big data’can make big impact: Findings from a systematic review and a longitudinal case study. International Journal of Production Economics , 165, 234-246.
+Wang, G., Gunasekaran, A., Ngai, E. W., & Papadopoulos, T. (2016). Big data analytics in logistics and supply chain management: Certain investigations for research and applications. International Journal of Production Economics , 176, 98-110.
+Watson, S. R., & Buede, D. M. (1987). Decisions synthesis: the principles and practice of decision analysis. Cambridge: Cambridge University Press.
+Wickham, H. (2014). Advanced R. CRC Press.
+Zhan, Y. Z., Tan, K. H., Pawar, K., & Tan, K. C. (2014). Harvesting big data to support supply chain innovation. 19th International Symposium on Logistics, (pp. 25-27).
+Zhenfeng, Z., Danxia, G., & Liuming, D. (2007). Positioning model of purchasing based on Kraljic’s purchasing portfolio matrix and factor analysis. Globalization Challenge and Management Transformation , 289.
+
+
+
+
+2
+
+
