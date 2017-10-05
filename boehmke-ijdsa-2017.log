@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.27)  5 OCT 2017 11:39
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.27)  5 OCT 2017 12:12
 entering extended mode
 **./boehmke-ijdsa-2017.tex
 (boehmke-ijdsa-2017.tex
@@ -129,6 +129,28 @@ Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen115
 \Gin@req@width=\dimen116
 )
+("C:\Users\greenweb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\fancyvrb\fancyv
+rb.sty"
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count106
+\FV@InFile=\read1
+\FV@TabBox=\box29
+\c@FancyVerbLine=\count107
+\FV@StepNumber=\count108
+\FV@OutFile=\write3
+)
+("C:\Users\greenweb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\float\float.sty
+"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count109
+\float@exts=\toks17
+\float@box=\box30
+\@float@everytoks=\toks18
+\@floatcapt=\box31
+)
 ("C:\Users\greenweb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hyperr
 ef.sty"
 Package: hyperref 2017/03/14 v6.85a Hypertext links for LaTeX
@@ -192,14 +214,14 @@ ons.sty"
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
 \@linkdim=\dimen117
-\Hy@linkcounter=\count106
-\Hy@pagecounter=\count107
+\Hy@linkcounter=\count110
+\Hy@pagecounter=\count111
 
 ("C:\Users\greenweb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\pd1enc
 .def"
 File: pd1enc.def 2017/03/14 v6.85a Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count108
+\Hy@SavedSpaceFactor=\count112
 
 ("C:\Users\greenweb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\00miktex\hyperr
 ef.cfg"
@@ -212,7 +234,7 @@ Package hyperref Info: Plain pages OFF on input line 4513.
 Package hyperref Info: Backreferencing OFF on input line 4518.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4751.
-\c@Hy@tempcnt=\count109
+\c@Hy@tempcnt=\count113
 
 ("C:\Users\greenweb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\url\url.sty"
 \Urlmuskip=\muskip10
@@ -220,7 +242,7 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5104.
 \XeTeXLinkMargin=\dimen118
-\Fld@menulength=\count110
+\Fld@menulength=\count114
 \Field@Width=\dimen119
 \Fld@charsize=\dimen120
 Package hyperref Info: Hyper figures OFF on input line 6358.
@@ -232,9 +254,9 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6383.
 Package hyperref Info: PDF/A mode OFF on input line 6388.
 LaTeX Info: Redefining \ref on input line 6428.
 LaTeX Info: Redefining \pageref on input line 6432.
-\Hy@abspage=\count111
-\c@Item=\count112
-\c@Hfootnote=\count113
+\Hy@abspage=\count115
+\c@Item=\count116
+\c@Hfootnote=\count117
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
@@ -243,8 +265,8 @@ Package hyperref Message: Driver (autodetected): hpdftex.
 ("C:\Users\greenweb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\hpdfte
 x.def"
 File: hpdftex.def 2017/03/14 v6.85a Hyperref driver for pdfTeX
-\Fld@listcount=\count114
-\c@bookmark@seq@number=\count115
+\Fld@listcount=\count118
+\c@bookmark@seq@number=\count119
 
 ("C:\Users\greenweb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\rerunf
 ilecheck.sty"
@@ -260,43 +282,43 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip44
 \bibsep=\skip45
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count116
+\c@NAT@ctr=\count120
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 25.
+Package hyperref Info: Option `colorlinks' set `true' on input line 27.
  (boehmke-ijdsa-2017.aux)
 \openout1 = `boehmke-ijdsa-2017.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 33.
-LaTeX Font Info:    ... okay on input line 33.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 35.
+LaTeX Font Info:    ... okay on input line 35.
 
 ("C:\Users\greenweb\AppData\Local\Programs\MiKTeX 2.9\tex\context\base\supp-pdf
 .mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count117
+\scratchcounter=\count121
 \scratchdimen=\dimen121
-\scratchbox=\box29
-\nofMPsegments=\count118
-\nofMParguments=\count119
-\everyMPshowfont=\toks17
-\MPscratchCnt=\count120
+\scratchbox=\box32
+\nofMPsegments=\count122
+\nofMParguments=\count123
+\everyMPshowfont=\toks19
+\MPscratchCnt=\count124
 \MPscratchDim=\dimen122
-\MPnumerator=\count121
-\makeMPintoPDFobject=\count122
-\everyMPtoPDFconversion=\toks18
+\MPnumerator=\count125
+\makeMPintoPDFobject=\count126
+\everyMPtoPDFconversion=\toks20
 )
 ("C:\Users\greenweb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\oberdiek\epstop
 df-base.sty"
@@ -313,7 +335,7 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\AtBeginShipoutBox=\box30
+\AtBeginShipoutBox=\box33
 
 ("C:\Users\greenweb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\graphics\color.
 sty"
@@ -325,7 +347,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 147.
 )
-Package hyperref Info: Link coloring ON on input line 33.
+Package hyperref Info: Link coloring ON on input line 35.
 
 ("C:\Users\greenweb\AppData\Local\Programs\MiKTeX 2.9\tex\latex\hyperref\namere
 f.sty"
@@ -335,94 +357,87 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 itlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count123
+\c@section@level=\count127
 )
-LaTeX Info: Redefining \ref on input line 33.
-LaTeX Info: Redefining \pageref on input line 33.
-LaTeX Info: Redefining \nameref on input line 33.
+LaTeX Info: Redefining \ref on input line 35.
+LaTeX Info: Redefining \pageref on input line 35.
+LaTeX Info: Redefining \nameref on input line 35.
  (boehmke-ijdsa-2017.out) (boehmke-ijdsa-2017.out)
-\@outlinefile=\write3
-\openout3 = `boehmke-ijdsa-2017.out'.
+\@outlinefile=\write4
+\openout4 = `boehmke-ijdsa-2017.out'.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 64.
+(Font)              <7> on input line 86.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 64.
-LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 64.
+(Font)              <5> on input line 86.
+LaTeX Font Info:    Calculating math sizes for size <8.5> on input line 86.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8.5> on input line 64.
+(Font)              <8.5> on input line 86.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5.94997> on input line 64.
+(Font)              <5.94997> on input line 86.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <4.25> on input line 64.
+(Font)              <4.25> on input line 86.
 
-Underfull \vbox (badness 4429) has occurred while \output is active []
-
-
-Overfull \hbox (5.31407pt too wide) in paragraph at lines 86--87
-[]\OT1/cmr/m/n/10 How data man-age-ment is chang-ing with to-day's "big"
- []
-
-
-Underfull \vbox (badness 1533) has occurred while \output is active []
+Underfull \vbox (badness 2269) has occurred while \output is active []
 
  [1{C:/Users/greenweb/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-Overfull \hbox (1.70296pt too wide) in paragraph at lines 92--93
+Overfull \hbox (5.31407pt too wide) in paragraph at lines 108--109
+[]\OT1/cmr/m/n/10 How data man-age-ment is chang-ing with to-day's "big"
+ []
+
+
+Overfull \hbox (1.70296pt too wide) in paragraph at lines 114--115
 \OT1/cmr/m/n/10 pub-lish-able (and in-deed pub-lished) but don't add
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-
-<venn-diagram.png, id=123, 317.5062pt x 271.4943pt>
+<venn-diagram.png, id=111, 317.5062pt x 271.4943pt>
 File: venn-diagram.png Graphic file (type png)
  <use venn-diagram.png>
-Package pdftex.def Info: venn-diagram.png used on input line 113.
+Package pdftex.def Info: venn-diagram.png used on input line 135.
 (pdftex.def)             Requested size: 247.5pt x 211.63625pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 113--114
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 135--136
 [][] 
  []
 
-[2 <./venn-diagram.png>]
-Overfull \hbox (6.0085pt too wide) in paragraph at lines 126--127
+[2]
+Overfull \hbox (6.0085pt too wide) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 tech-nol-ogy adop-tion while be-ing con-strained by re-sources
  []
 
 
-Overfull \hbox (4.45293pt too wide) in paragraph at lines 136--137
+Overfull \hbox (4.45293pt too wide) in paragraph at lines 158--159
 \OT1/cmr/m/n/10 such as com-pu-ta-tional statis-tics, econo-met-rics, op-ti-miz
 a-
  []
 
-[3]
-Overfull \hbox (0.98071pt too wide) in paragraph at lines 140--141
+[3 <./venn-diagram.png>]
+Overfull \hbox (0.98071pt too wide) in paragraph at lines 162--163
 []\OT1/cmr/m/n/10 Open source pro-gram-ming lan-guages and their pack-
  []
 
 
-Overfull \hbox (1.09178pt too wide) in paragraph at lines 140--141
+Overfull \hbox (1.09178pt too wide) in paragraph at lines 162--163
 \OT1/cmr/m/n/10 dus-tries. Thus, this col-lec-tive ac-tion ca-pa-bil-ity is pri
 med
  []
 
 
-Overfull \hbox (0.25844pt too wide) in paragraph at lines 148--149
+Overfull \hbox (0.25844pt too wide) in paragraph at lines 170--171
 \OT1/cmr/m/n/10 Business lead-ers are in-creas-ingly re-liant upon new forms
  []
 
 
-Overfull \hbox (2.27238pt too wide) in paragraph at lines 152--153
+Overfull \hbox (2.27238pt too wide) in paragraph at lines 174--175
 \OT1/cmr/m/n/10 ment ([][]Gel-der-man and Van Weele[][], [][]2003[][]). Al-thou
 gh other
  []
 
 
-Overfull \hbox (0.5363pt too wide) in paragraph at lines 152--153
+Overfull \hbox (0.5363pt too wide) in paragraph at lines 174--175
 \OT1/cmr/m/n/10 mod-els have been de-vel-oped ([][]Tryg-gva-son and Jo-hansen[]
 [],
  []
@@ -431,610 +446,178 @@ Overfull \hbox (0.5363pt too wide) in paragraph at lines 152--153
 File: kraljic-matrix.png Graphic file (type png)
 
 <use kraljic-matrix.png>
-Package pdftex.def Info: kraljic-matrix.png used on input line 155.
+Package pdftex.def Info: kraljic-matrix.png used on input line 177.
 (pdftex.def)             Requested size: 247.5pt x 167.02483pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 155--156
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 177--178
 [][] 
  []
 
 
-Overfull \hbox (9.78622pt too wide) in paragraph at lines 160--161
+Overfull \hbox (9.78622pt too wide) in paragraph at lines 182--183
 \OT1/cmr/m/n/10 How-ever, one of the KPM's main cri-tiques re-volves around
  []
 
 [4 <./kraljic-matrix.png>]
-Overfull \hbox (0.11775pt too wide) in paragraph at lines 172--173
+Overfull \hbox (0.11775pt too wide) in paragraph at lines 194--195
 \OT1/cmtt/m/n/10 / / github . com / afit-[]r / KraljicMatrix$[][]\OT1/cmr/m/n/1
 0 ). To in-stall the
  []
 
 
-Overfull \hbox (0.20175pt too wide) in paragraph at lines 226--227
+Overfull \hbox (0.20175pt too wide) in paragraph at lines 249--250
 []\OT1/cmr/m/n/10 First, we must re-mem-ber that the KPM merely plots
  []
 
-[5]
-Overfull \hbox (2.53372pt too wide) in paragraph at lines 241--241
-[]                   \OT1/cmtt/m/n/10 desired_v = c(0.8, 0.9, 1),[] 
- []
-
-<fig3.png, id=334, 433.62pt x 216.81pt>
+[5] <fig3.png, id=331, 433.62pt x 216.81pt>
 File: fig3.png Graphic file (type png)
  <use fig3.png>
-Package pdftex.def Info: fig3.png used on input line 253.
+Package pdftex.def Info: fig3.png used on input line 276.
 (pdftex.def)             Requested size: 247.5pt x 123.7517pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 253--254
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 276--277
 [][] 
  []
 
-
-Overfull \hbox (7.78368pt too wide) in paragraph at lines 266--266
-[]                    \OT1/cmtt/m/n/10 desired_v = c(.75, 0.9, 1),[] 
- []
-
-<fig4.png, id=335, 433.62pt x 216.81pt>
+[6 <./fig3.png>] <fig4.png, id=345, 433.62pt x 216.81pt>
 File: fig4.png Graphic file (type png)
  <use fig4.png>
-Package pdftex.def Info: fig4.png used on input line 269.
+Package pdftex.def Info: fig4.png used on input line 292.
 (pdftex.def)             Requested size: 247.5pt x 123.7517pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 269--270
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 292--293
 [][] 
  []
 
-[6 <./fig3.png>]
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 299--299
-[]\OT1/cmtt/m/n/10 # using the dplyr package and the mutate function to add a n
-ew variable[] 
- []
 
-
-Overfull \hbox (81.28304pt too wide) in paragraph at lines 299--299
-[]  \OT1/cmtt/m/n/10 mutate(x_SAVF_score = SAVF_score(x_attribute, 1, 5, 0.653)
-,[] 
- []
-
-
-Overfull \hbox (81.28304pt too wide) in paragraph at lines 299--299
-[]         \OT1/cmtt/m/n/10 y_SAVF_score = SAVF_score(y_attribute, 1, 10, 0.70)
-)[] 
- []
-
-
-Overfull \hbox (81.28304pt too wide) in paragraph at lines 299--299
-[]\OT1/cmtt/m/n/10 ##      PSC x_attribute y_attribute x_SAVF_score y_SAVF_scor
-e[] 
- []
-
-
-Overfull \hbox (81.28304pt too wide) in paragraph at lines 299--299
-[]\OT1/cmtt/m/n/10 ##    <chr>       <dbl>       <dbl>        <dbl>        <dbl
->[] 
- []
-
-
-Overfull \hbox (81.28304pt too wide) in paragraph at lines 299--299
-[]\OT1/cmtt/m/n/10 ## 1   D233        3.01        4.84    0.7887459    0.933697
-7[] 
- []
-
-
-Overfull \hbox (81.28304pt too wide) in paragraph at lines 299--299
-[]\OT1/cmtt/m/n/10 ## 2   F352        4.34        5.64    0.9573299    0.962916
-4[] 
- []
-
-
-Overfull \hbox (81.28304pt too wide) in paragraph at lines 299--299
-[]\OT1/cmtt/m/n/10 ## 3   T713        3.37        4.30    0.8495938    0.902395
-8[] 
- []
-
-
-Overfull \hbox (81.28304pt too wide) in paragraph at lines 299--299
-[]\OT1/cmtt/m/n/10 ## 4   K833        2.67        5.53    0.7165401    0.959800
-9[] 
- []
-
-
-Overfull \hbox (81.28304pt too wide) in paragraph at lines 299--299
-[]\OT1/cmtt/m/n/10 ## 5   Q121        3.48        4.33    0.8655080    0.904462
-4[] 
- []
-
-
-Overfull \hbox (81.28304pt too wide) in paragraph at lines 299--299
-[]\OT1/cmtt/m/n/10 ## 6   C791        3.32        7.32    0.8419735    0.989831
-4[] 
- []
-
-
-Overfull \hbox (81.28304pt too wide) in paragraph at lines 299--299
-[]\OT1/cmtt/m/n/10 ## 7   Y207        3.48        5.42    0.8655080    0.956436
-0[] 
- []
-
-
-Overfull \hbox (81.28304pt too wide) in paragraph at lines 299--299
-[]\OT1/cmtt/m/n/10 ## 8   W439        2.47        3.35    0.6659448    0.808472
-0[] 
- []
-
-
-Overfull \hbox (81.28304pt too wide) in paragraph at lines 299--299
-[]\OT1/cmtt/m/n/10 ## 9   N290        1.66        4.02    0.3778582    0.880863
-6[] 
- []
-
-
-Overfull \hbox (81.28304pt too wide) in paragraph at lines 299--299
-[]\OT1/cmtt/m/n/10 ## 10  C251        1.00        7.47    0.0000000    0.991028
-4[] 
- []
-
-
-Overfull \hbox (1.59065pt too wide) in paragraph at lines 301--302
+Overfull \hbox (1.59065pt too wide) in paragraph at lines 322--323
 \OT1/cmr/m/n/10 struc-ture, we can pro-ceed with plot-ting each PSC within
  []
 
-
-Overfull \hbox (7.78368pt too wide) in paragraph at lines 304--304
-[]\OT1/cmtt/m/n/10 kraljic_matrix(psc, x_SAVF_score, y_SAVF_score)[] 
- []
-
-<fig5.png, id=344, 505.89pt x 361.35pt>
+<fig5.png, id=346, 505.89pt x 361.35pt>
 File: fig5.png Graphic file (type png)
  <use fig5.png>
-Package pdftex.def Info: fig5.png used on input line 307.
+Package pdftex.def Info: fig5.png used on input line 328.
 (pdftex.def)             Requested size: 247.5pt x 176.78735pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 307--308
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 328--329
 [][] 
  []
 
-
-Overfull \hbox (102.28285pt too wide) in paragraph at lines 330--330
-[]  \OT1/cmtt/m/n/10 mutate(quadrant = kraljic_quadrant(x_SAVF_score, y_SAVF_sc
-ore))[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 330--330
-[]\OT1/cmtt/m/n/10 ##      PSC x_attribute y_attribute x_SAVF_score y_SAVF_scor
-e  quadrant[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 330--330
-[]\OT1/cmtt/m/n/10 ##    <chr>       <dbl>       <dbl>        <dbl>        <dbl
->     <chr>[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 330--330
-[]\OT1/cmtt/m/n/10 ## 1   D233        3.01        4.84    0.7887459    0.933697
-7  Leverage[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 330--330
-[]\OT1/cmtt/m/n/10 ## 2   F352        4.34        5.64    0.9573299    0.962916
-4  Leverage[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 330--330
-[]\OT1/cmtt/m/n/10 ## 3   T713        3.37        4.30    0.8495938    0.902395
-8  Leverage[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 330--330
-[]\OT1/cmtt/m/n/10 ## 4   K833        2.67        5.53    0.7165401    0.959800
-9  Leverage[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 330--330
-[]\OT1/cmtt/m/n/10 ## 5   Q121        3.48        4.33    0.8655080    0.904462
-4  Leverage[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 330--330
-[]\OT1/cmtt/m/n/10 ## 6   C791        3.32        7.32    0.8419735    0.989831
-4  Leverage[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 330--330
-[]\OT1/cmtt/m/n/10 ## 7   Y207        3.48        5.42    0.8655080    0.956436
-0  Leverage[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 330--330
-[]\OT1/cmtt/m/n/10 ## 8   W439        2.47        3.35    0.6659448    0.808472
-0  Leverage[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 330--330
-[]\OT1/cmtt/m/n/10 ## 9   N290        1.66        4.02    0.3778582    0.880863
-6 Strategic[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 330--330
-[]\OT1/cmtt/m/n/10 ## 10  C251        1.00        7.47    0.0000000    0.991028
-4 Strategic[] 
- []
-
-[7 <./fig4.png> <./fig5.png>]
-Overfull \hbox (112.78276pt too wide) in paragraph at lines 356--356
-[]  \OT1/cmtt/m/n/10 mutate(MAVF = MAVF_score(x_SAVF_score, y_SAVF_score, 0.65,
- 0.35))[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 356--356
-[]\OT1/cmtt/m/n/10 ##      PSC x_attribute y_attribute x_SAVF_score y_SAVF_scor
-e      MAVF[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 356--356
-[]\OT1/cmtt/m/n/10 ##    <chr>       <dbl>       <dbl>        <dbl>        <dbl
->     <dbl>[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 356--356
-[]\OT1/cmtt/m/n/10 ## 1   D233        3.01        4.84    0.7887459    0.933697
-7 0.8394790[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 356--356
-[]\OT1/cmtt/m/n/10 ## 2   F352        4.34        5.64    0.9573299    0.962916
-4 0.9592852[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 356--356
-[]\OT1/cmtt/m/n/10 ## 3   T713        3.37        4.30    0.8495938    0.902395
-8 0.8680745[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 356--356
-[]\OT1/cmtt/m/n/10 ## 4   K833        2.67        5.53    0.7165401    0.959800
-9 0.8016814[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 356--356
-[]\OT1/cmtt/m/n/10 ## 5   Q121        3.48        4.33    0.8655080    0.904462
-4 0.8791420[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 356--356
-[]\OT1/cmtt/m/n/10 ## 6   C791        3.32        7.32    0.8419735    0.989831
-4 0.8937237[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 356--356
-[]\OT1/cmtt/m/n/10 ## 7   Y207        3.48        5.42    0.8655080    0.956436
-0 0.8973328[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 356--356
-[]\OT1/cmtt/m/n/10 ## 8   W439        2.47        3.35    0.6659448    0.808472
-0 0.7158293[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 356--356
-[]\OT1/cmtt/m/n/10 ## 9   N290        1.66        4.02    0.3778582    0.880863
-6 0.5539101[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 356--356
-[]\OT1/cmtt/m/n/10 ## 10  C251        1.00        7.47    0.0000000    0.991028
-4 0.3468599[] 
- []
-
-
-Overfull \hbox (112.78276pt too wide) in paragraph at lines 379--379
-[]  \OT1/cmtt/m/n/10 mutate(MAVF = MAVF_score(x_SAVF_score, y_SAVF_score, 0.65,
- 0.35),[] 
- []
-
-
-Overfull \hbox (123.28267pt too wide) in paragraph at lines 379--379
-[]         \OT1/cmtt/m/n/10 quadrant = kraljic_quadrant(x_SAVF_score, y_SAVF_sc
-ore)) %>%[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 379--379
-[]\OT1/cmtt/m/n/10 ##      PSC x_attribute y_attribute x_SAVF_score y_SAVF_scor
-e      MAVF[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 379--379
-[]\OT1/cmtt/m/n/10 ##    <chr>       <dbl>       <dbl>        <dbl>        <dbl
->     <dbl>[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 379--379
-[]\OT1/cmtt/m/n/10 ## 1   Y357        5.00        6.55    1.0000000    0.981254
-1 0.9934389[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 379--379
-[]\OT1/cmtt/m/n/10 ## 2   E103        4.46        7.71    0.9665150    0.992700
-3 0.9756799[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 379--379
-[]\OT1/cmtt/m/n/10 ## 3   C432        4.65        6.05    0.9796633    0.972627
-3 0.9772007[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 379--379
-[]\OT1/cmtt/m/n/10 ## 4   P402        5.00        5.82    1.0000000    0.967524
-3 0.9886335[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 379--379
-[]\OT1/cmtt/m/n/10 ## 5   Q255        4.95        6.41    0.9973714    0.979134
-5 0.9909885[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 379--379
-[]\OT1/cmtt/m/n/10 ## 6   H426        5.00        5.58    1.0000000    0.961246
-8 0.9864364[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 379--379
-[]\OT1/cmtt/m/n/10 ## 7   E908        4.75        7.11    0.9859554    0.987929
-9 0.9866465[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 379--379
-[]\OT1/cmtt/m/n/10 ## 8   X634        5.00        5.19    1.0000000    0.948504
-7 0.9819766[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 379--379
-[]\OT1/cmtt/m/n/10 ## 9   O288        5.00        5.00    1.0000000    0.940917
-7 0.9793212[] 
- []
-
-
-Overfull \hbox (133.78258pt too wide) in paragraph at lines 379--379
-[]\OT1/cmtt/m/n/10 ## 10  V870        5.00        5.88    1.0000000    0.968935
-7 0.9891275[] 
- []
-
-
-Overfull \hbox (2.53372pt too wide) in paragraph at lines 379--379
-[]\OT1/cmtt/m/n/10 ## # ... with 1 more variables: quadrant <chr>[] 
- []
-
-[8]
-Overfull \hbox (144.28249pt too wide) in paragraph at lines 405--405
-[]\OT1/cmtt/m/n/10 ##      PSC MAVF_Min MAVF_1st_Q MAVF_Median MAVF_Mean MAVF_3
-rd_Q MAVF_Max[] 
- []
-
-
-Overfull \hbox (144.28249pt too wide) in paragraph at lines 405--405
-[]\OT1/cmtt/m/n/10 ##    <chr>    <dbl>      <dbl>       <dbl>     <dbl>      <
-dbl>    <dbl>[] 
- []
-
-
-Overfull \hbox (144.28249pt too wide) in paragraph at lines 405--405
-[]\OT1/cmtt/m/n/10 ## 1   D233   0.8148     0.8294      0.8390    0.8392     0.
-8489   0.8636[] 
- []
-
-
-Overfull \hbox (144.28249pt too wide) in paragraph at lines 405--405
-[]\OT1/cmtt/m/n/10 ## 2   F352   0.9517     0.9569      0.9590    0.9592     0.
-9614   0.9667[] 
- []
-
-
-Overfull \hbox (144.28249pt too wide) in paragraph at lines 405--405
-[]\OT1/cmtt/m/n/10 ## 3   T713   0.8465     0.8609      0.8676    0.8678     0.
-8744   0.8891[] 
- []
-
-
-Overfull \hbox (144.28249pt too wide) in paragraph at lines 405--405
-[]\OT1/cmtt/m/n/10 ## 4   K833   0.7718     0.7881      0.8003    0.8013     0.
-8151   0.8311[] 
- []
-
-
-Overfull \hbox (144.28249pt too wide) in paragraph at lines 405--405
-[]\OT1/cmtt/m/n/10 ## 5   Q121   0.8590     0.8726      0.8786    0.8789     0.
-8850   0.8988[] 
- []
-
-
-Overfull \hbox (144.28249pt too wide) in paragraph at lines 405--405
-[]\OT1/cmtt/m/n/10 ## 6   C791   0.8774     0.8859      0.8928    0.8935     0.
-9016   0.9099[] 
- []
-
-
-Overfull \hbox (144.28249pt too wide) in paragraph at lines 405--405
-[]\OT1/cmtt/m/n/10 ## 7   Y207   0.8809     0.8907      0.8970    0.8971     0.
-9035   0.9134[] 
- []
-
-
-Overfull \hbox (144.28249pt too wide) in paragraph at lines 405--405
-[]\OT1/cmtt/m/n/10 ## 8   W439   0.6765     0.7017      0.7151    0.7153     0.
-7285   0.7542[] 
- []
-
-
-Overfull \hbox (144.28249pt too wide) in paragraph at lines 405--405
-[]\OT1/cmtt/m/n/10 ## 9   N290   0.4951     0.5264      0.5510    0.5532     0.
-5813   0.6120[] 
- []
-
-
-Overfull \hbox (144.28249pt too wide) in paragraph at lines 405--405
-[]\OT1/cmtt/m/n/10 ## 10  C251   0.2480     0.2979      0.3414    0.3456     0.
-3958   0.4458[] 
- []
-
-
-Overfull \hbox (112.78276pt too wide) in paragraph at lines 405--405
-[]\OT1/cmtt/m/n/10 ## # ... with 190 more rows, and 1 more variables: MAVF_Rang
-e <dbl>[] 
- []
-
-
-Overfull \hbox (0.31409pt too wide) in paragraph at lines 431--432
+[7 <./fig4.png> <./fig5.png>] [8]
+Overfull \hbox (0.31409pt too wide) in paragraph at lines 452--453
 \OT1/cmr/m/n/10 sub-set ac-counted for 80% of FY10-14 in-stal-la-tion spend.
  []
 
 
-Overfull \hbox (3.06401pt too wide) in paragraph at lines 433--434
+Overfull \hbox (3.06401pt too wide) in paragraph at lines 454--455
 \OT1/cmr/m/n/10 search or-ga-ni-za-tion whose re-ports delve into sup-ply mar-
  []
 
 
-Overfull \hbox (9.59186pt too wide) in paragraph at lines 433--434
+Overfull \hbox (9.59186pt too wide) in paragraph at lines 454--455
 \OT1/cmr/m/n/10 con-cen-tra-tion, and prod-uct spe-cial-iza-tion. Switch-ing co
 sts
  []
 
 
-Overfull \hbox (12.7029pt too wide) in paragraph at lines 435--436
+Overfull \hbox (12.7029pt too wide) in paragraph at lines 456--457
 \OT1/cmr/m/n/10 those PSCs that ex-pe-ri-enced the largest post-sequestration
  []
 
 
-Overfull \hbox (0.28622pt too wide) in paragraph at lines 435--436
+Overfull \hbox (0.28622pt too wide) in paragraph at lines 456--457
 \OT1/cmr/m/n/10 riod, com-pute the de-vi-a-tion be-tween the two, and scaled
  []
 
 
-Overfull \hbox (26.6829pt too wide) in paragraph at lines 437--438
+Overfull \hbox (26.6829pt too wide) in paragraph at lines 458--459
 \OML/cmm/m/it/10 v[] [] \OT1/cmr/m/n/10 = []$ and $\OML/cmm/m/it/10 v[] [] \OT1
 /cmr/m/n/10 =
  []
 
 
-Overfull \hbox (3.73068pt too wide) in paragraph at lines 437--438
+Overfull \hbox (3.73068pt too wide) in paragraph at lines 458--459
 []$\OT1/cmr/m/n/10 . There-fore, us-ing this in-for-ma-tion we could
  []
 
-<fig6.png, id=387, 1942.25626pt x 1121.69063pt>
+<fig6.png, id=389, 1942.25626pt x 1121.69063pt>
 File: fig6.png Graphic file (type png)
  <use fig6.png>
-Package pdftex.def Info: fig6.png used on input line 440.
+Package pdftex.def Info: fig6.png used on input line 461.
 (pdftex.def)             Requested size: 247.5pt x 142.93236pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 440--441
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 461--462
 [][] 
  []
 
-<fig7.png, id=388, 1168.365pt x 770.88pt>
+<fig7.png, id=390, 1168.365pt x 770.88pt>
 File: fig7.png Graphic file (type png)
  <use fig7.png>
-Package pdftex.def Info: fig7.png used on input line 448.
+Package pdftex.def Info: fig7.png used on input line 469.
 (pdftex.def)             Requested size: 247.5pt x 163.28934pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 448--449
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 469--470
 [][] 
  []
 
+[9 <./fig6.png
 
-Overfull \hbox (17.8696pt too wide) in paragraph at lines 453--454
+pdfTeX warning: pdflatex.exe (file ./fig6.png): large interlaced PNG might caus
+e out of memory (use non-interlaced PNG to fix this)
+>]
+Overfull \hbox (17.8696pt too wide) in paragraph at lines 474--475
 \OT1/cmr/m/n/10 they termed Key Per-for-mance In-di-ca-tors, or KPIs. AFICA's
  []
 
-[9]
-Underfull \vbox (badness 1867) has occurred while \output is active []
 
-
-Overfull \hbox (139.68712pt too wide) in paragraph at lines 464--480
-[][] 
- []
-
-
-Overfull \hbox (3.31403pt too wide) in paragraph at lines 484--485
+Overfull \hbox (3.31403pt too wide) in paragraph at lines 506--507
 \OT1/cmr/m/n/10 by mis-sion im-pact but also by bud-get con-straints. There-
  []
 
-<fig8.png, id=398, 1365.60187pt x 591.71063pt>
+<fig8.png, id=402, 1365.60187pt x 591.71063pt>
 File: fig8.png Graphic file (type png)
  <use fig8.png>
-Package pdftex.def Info: fig8.png used on input line 487.
+Package pdftex.def Info: fig8.png used on input line 509.
 (pdftex.def)             Requested size: 247.5pt x 107.23463pt.
 
-Overfull \hbox (8.53583pt too wide) in paragraph at lines 487--488
+Overfull \hbox (8.53583pt too wide) in paragraph at lines 509--510
 [][] 
  []
 
 
-Overfull \hbox (2.86966pt too wide) in paragraph at lines 492--493
+Overfull \hbox (2.86966pt too wide) in paragraph at lines 514--515
 \OT1/cmr/m/n/10 dominated PSCs that form the ap-prox-i-mate Pareto fron-
  []
 
 
-Overfull \hbox (5.20287pt too wide) in paragraph at lines 492--493
+Overfull \hbox (5.20287pt too wide) in paragraph at lines 514--515
 \OT1/cmr/m/n/10 Force lead-er-ship to fur-ther in-ves-ti-gate for strate-gic so
 urc-
  []
 
-[10 <./fig6.png
 
-pdfTeX warning: pdflatex.exe (file ./fig6.png): large interlaced PNG might caus
-e out of memory (use non-interlaced PNG to fix this)
-> <./fig7.png>]
-Overfull \hbox (0.70071pt too wide) in paragraph at lines 528--529
+Overfull \hbox (0.70071pt too wide) in paragraph at lines 551--552
 \OT1/cmr/m/n/10 pre-vi-ous AFICA ap-proaches. AFICA also ac-knowl-edged
  []
 
-
-Overfull \hbox (9.11958pt too wide) in paragraph at lines 535--536
+[10 <./fig7.png> <./fig8.png>]
+Overfull \hbox (9.11958pt too wide) in paragraph at lines 558--559
 \OT1/cmr/m/n/10 This re-search pro-vides two im-por-tant con-tri-bu-tions. Firs
 t,
  []
 
-(boehmke-ijdsa-2017.bbl [11 <./fig8.png>]
-Underfull \hbox (badness 1173) in paragraph at lines 65--68
-\OT1/cmr/m/n/10 ing for suc-cess-ful ca-reer in big data and busi-
- []
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+(boehmke-ijdsa-2017.bbl
+Underfull \hbox (badness 1173) in paragraph at lines 65--68
+\OT1/cmr/m/n/10 ing for suc-cess-ful ca-reer in big data and busi-
+ []
 
 
 Underfull \hbox (badness 1102) in paragraph at lines 106--108
@@ -1061,27 +644,27 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 556.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 579.
 
 [14
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 556.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 579.
  (boehmke-ijdsa-2017.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 556.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 556.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 579.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 579.
 Package rerunfilecheck Info: File `boehmke-ijdsa-2017.out' has not changed.
 (rerunfilecheck)             Checksum: 17E7F72829E4F005CED92641E7619C22;460.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 556.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 579.
  ) 
 Here is how much of TeX's memory you used:
- 6471 strings out of 493323
- 96934 string characters out of 3128713
- 194341 words of memory out of 3000000
- 9854 multiletter control sequences out of 15000+200000
- 10515 words of font info for 37 fonts, out of 3000000 for 9000
+ 6894 strings out of 493323
+ 103538 string characters out of 3128713
+ 200142 words of memory out of 3000000
+ 10268 multiletter control sequences out of 15000+200000
+ 10683 words of font info for 38 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,12n,33p,2651b,533s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 28i,12n,33p,2651b,531s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/greenweb/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfo
 nts/cm/cmbsy10.pfb><C:/Users/greenweb/AppData/Local/Programs/MiKTeX 2.9/fonts/t
 ype1/public/amsfonts/cm/cmbx10.pfb><C:/Users/greenweb/AppData/Local/Programs/Mi
@@ -1099,10 +682,12 @@ C:/Users/greenweb/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts
 ublic/amsfonts/cm/cmsy10.pfb><C:/Users/greenweb/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/greenweb/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/greenweb/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on boehmke-ijdsa-2017.pdf (14 pages, 737928 bytes).
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb><C:
+/Users/greenweb/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/c
+m/cmtt8.pfb>
+Output written on boehmke-ijdsa-2017.pdf (14 pages, 745408 bytes).
 PDF statistics:
- 522 PDF objects out of 1000 (max. 8388607)
+ 527 PDF objects out of 1000 (max. 8388607)
  108 named destinations out of 1000 (max. 500000)
  89 words of extra memory for PDF output out of 10000 (max. 10000000)
 
