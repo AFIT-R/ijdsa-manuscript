@@ -192,19 +192,27 @@ Thus, we introduce a multi-objective approach to position and analyze an organiz
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 KraljicMatrix \citep{bmof17} is an R package developed by the authors to provide a quantitative framework to position and analyze a firm's purchasing portfolio. Furthermore, it allows an analyst to quickly implement this analysis in a consistent manner. The KraljicMatrix package is available to download from the Comprehensive R Archive Network (CRAN; \url{https://cran.r-project.org} or from the GitHub repository (\url{https://github.com/afit-r/KraljicMatrix}). To install the stable version, which is hosted on CRAN, run:
-\begin{Verbatim}[fontsize=\footnotesize]
-install.packages("KraljicMatrix")
-\end{Verbatim}
+% \begin{Verbatim}[fontsize=\footnotesize]
+% install.packages("KraljicMatrix")
+% \end{Verbatim}
+\begin{figure}[!htb]
+  \includegraphics[width=0.5\textwidth]{code1.png}
+\end{figure}
 within the R operating environment. To download the development version, which is hosted on GitHub, run:
-\begin{Verbatim}[fontsize=\footnotesize]
-library(devtools)
-install_github("AFIT-R/KraljicMatrix")
-\end{Verbatim}
-
+% \begin{Verbatim}[fontsize=\footnotesize]
+% library(devtools)
+% install_github("AFIT-R/KraljicMatrix")
+% \end{Verbatim}
+\begin{figure}[!htb]
+  \includegraphics[width=0.5\textwidth]{code2.png}
+\end{figure}
 Now that the package is downloaded, we load the KraljicMatrix package in our current R environment to allow access to the functions:
-\begin{Verbatim}[fontsize=\footnotesize]
-library(KraljicMatrix)
-\end{Verbatim}
+% \begin{Verbatim}[fontsize=\footnotesize]
+% library(KraljicMatrix)
+% \end{Verbatim}
+\begin{figure}[!htb]
+  \includegraphics[width=0.5\textwidth]{code3.png}
+\end{figure}
 The KraljicMatrix package has eight functions to aid analysts in performing a KPM analysis:
 \begin{table*}[!htb]
   \centering
@@ -228,23 +236,26 @@ The KraljicMatrix package has eight functions to aid analysts in performing a KP
 
 Furthermore, an example dataset psc is provided in the KraljicMatrix package. This data contains 200 product and service contracts (PSCs). Each PSC has an $x$ attribute (i.e., supply risk) score from 1 (worst) to 5 (best) and $y$ attribute (i.e., profit impact) score from 1 (worst) to 10 (best).  We will use this data to illustrate the functionality of the KraljicMatrix package.
 
-\begin{Verbatim}[fontsize=\footnotesize]
-psc
-## # A tibble: 200 x 3
-##      PSC x_attribute y_attribute
-##    <chr>       <int>       <int>
-## 1   D233        3.01        4.84
-## 2   F352        4.34        5.64
-## 3   T713        3.37        4.30
-## 4   K833        2.67        5.53
-## 5   Q121        3.48        4.33
-## 6   C791        3.32        7.32
-## 7   Y207        3.48        5.42
-## 8   W439        2.47        3.35
-## 9   N290        1.66        4.02
-## 10  C251        1.00        7.47
-## # ... with 190 more rows
-\end{Verbatim}
+% \begin{Verbatim}[fontsize=\footnotesize]
+% psc
+% ## # A tibble: 200 x 3
+% ##      PSC x_attribute y_attribute
+% ##    <chr>       <int>       <int>
+% ## 1   D233        3.01        4.84
+% ## 2   F352        4.34        5.64
+% ## 3   T713        3.37        4.30
+% ## 4   K833        2.67        5.53
+% ## 5   Q121        3.48        4.33
+% ## 6   C791        3.32        7.32
+% ## 7   Y207        3.48        5.42
+% ## 8   W439        2.47        3.35
+% ## 9   N290        1.66        4.02
+% ## 10  C251        1.00        7.47
+% ## # ... with 190 more rows
+% \end{Verbatim}
+\begin{figure}[!htb]
+  \includegraphics[width=0.5\textwidth]{code4.png}
+\end{figure}
 
 First, we must remember that the KPM merely plots products and services on an $x$-$y$ axis coordinate system.  The $x$ and $y$ attributes are simply evaluation measures. They enable each product and service to obtain a score for each dimension being measured. For example, the $x$ attribute score could be the IBISWorld Buyer Power Score measuring supply market complexity (1-5 in 0.01 increments). However, to plot these attributes on the KPM matrix we need to normalize the values scores such that i) the values represent the decision makers' preferences and ii) the values are standardized. To do this we can use an exponential single attribute value function (SAVF). For example, let $0 \le v_x\left(x\right) \le 1$ represent the normalized value of the $x$ attribute such that $x^0$ and $x^*$ are the lowest and highest preferred value of attribute $x$ respectively. Thus, $v_x\left(x^0\right) = 0$ and $v_x\left(x^*\right) = 1$. Consequently, let $v_x\left(x_i\right)$ be the SAVF of exponential form whereby each $x_i$ is an input and $\rho_x$ be the exponential constant for $v_x\left(x_i\right)$:
 \begin{equation}
@@ -253,24 +264,30 @@ v_x\left(x_i\right) = \frac{1 - \exp\left(-\left(x_i - x^0\right)\right) / \rho_
 \end{equation}
 
 After solving the single attribute value function for both $x$ and $y$ attributes, we obtain a $\left[v_x\left(x_i\right), v_y\left(y_i\right)\right]$ ordered pair for each service or product to be plotted in the KPM.  However, prior to applying the SAVF to our $x$ and $y$ attributes we must first identify the appropriate $\rho$ value. The benefit of applying an exponential SAVF is that it can take on many forms of increasing rates, along with aligning to a linear value function. Consequently, if certain $x$ attribute values are valued more than other values an exponential SAVF will capture this utility curve. To identify the appropriate exponential rate, subject matter expert (SME) inputs are typically evaluated and an exponential rate that most closely matches the preferred values provided by the SMEs is chosen. Thus, let's assume for our given $x$ attribute the SME inputs suggest that $x$ attribute values of 3, 4, and 5 provide a utility score of 0.80, 0.90, and 1.0 respectively (this represents a decreasing rate of return utility curve). Knowing that our $x$ attribute is bounded between 1 and 5 we can search for a $\rho$ value between 0 and 1 that provides the best-fit utility function using the SAVF\_preferred\_rho function.  Best-fit is measured by minimizing the sum of squared residuals ($S = \sum_{i = 1}^n r_i ^ 2$).
-\begin{Verbatim}[fontsize=\footnotesize]
-SAVF_preferred_rho(desired_x = c(3, 4, 5),
-                   desired_v = c(0.8, 0.9, 1),
-                   x_low = 1,
-                   x_high = 5,
-                   rho_low = 0,
-                   rho_high = 1)
-## [1] 0.6531
-\end{Verbatim}
+% \begin{Verbatim}[fontsize=\footnotesize]
+% SAVF_preferred_rho(desired_x = c(3, 4, 5),
+%                    desired_v = c(0.8, 0.9, 1),
+%                    x_low = 1,
+%                    x_high = 5,
+%                    rho_low = 0,
+%                    rho_high = 1)
+% ## [1] 0.6531
+% \end{Verbatim}
+\begin{figure}[!htb]
+  \includegraphics[width=0.5\textwidth]{code5.png}
+\end{figure}
 
 Thus, we can see that $\rho = 0.6531$ provides the best-fit exponential SAVF. We can illustrate this two ways. First, we can use SAVF\_plot to plot the single attribute utility curve compared to the subject matter desired values.
-\begin{Verbatim}[fontsize=\footnotesize]
-SAVF_plot(desired_x = c(3, 4, 5),
-          desired_v = c(0.8, 0.9, 1),
-          x_low = 1,
-          x_high = 5,
-          rho = 0.6531)
-\end{Verbatim}
+% \begin{Verbatim}[fontsize=\footnotesize]
+% SAVF_plot(desired_x = c(3, 4, 5),
+%           desired_v = c(0.8, 0.9, 1),
+%           x_low = 1,
+%           x_high = 5,
+%           rho = 0.6531)
+% \end{Verbatim}
+\begin{figure}[!htb]
+  \includegraphics[width=0.5\textwidth]{code6.png}
+\end{figure}
 
 \begin{figure}[!htb]
   \includegraphics[width=0.5\textwidth]{fig3.png}
@@ -279,14 +296,17 @@ SAVF_plot(desired_x = c(3, 4, 5),
 \end{figure}
 
 We can also visualize the errors of the $\rho$ search space with SAVF\_plot\_rho\_error, which plots the squared error terms for all $\rho$ values within the $\rho$ search space to illustrate the preferred $\rho$ that minimizes the squared error between subject matter desired values and exponentially fitted scores.
-\begin{Verbatim}[fontsize=\footnotesize]
-SAVF_plot_rho_error(desired_x = c(3, 4, 5),
-                    desired_v = c(.75, 0.9, 1),
-                    x_low = 1,
-                    x_high = 5,
-                    rho_low = 0,
-                    rho_high = 1)
-\end{Verbatim}
+% \begin{Verbatim}[fontsize=\footnotesize]
+% SAVF_plot_rho_error(desired_x = c(3, 4, 5),
+%                     desired_v = c(.75, 0.9, 1),
+%                     x_low = 1,
+%                     x_high = 5,
+%                     rho_low = 0,
+%                     rho_high = 1)
+% \end{Verbatim}
+\begin{figure}[!htb]
+  \includegraphics[width=0.5\textwidth]{code7.png}
+\end{figure}
 
 \begin{figure}[H]%[!htb]
   \includegraphics[width=0.5\textwidth]{fig4.png}
@@ -295,34 +315,40 @@ SAVF_plot_rho_error(desired_x = c(3, 4, 5),
 \end{figure}
 
 Once we've identified the preferred $\rho$ value, we can now apply the exponential SAVF with SAVF\_score to normalize our attributes based on our utility curve. Here, we assume that the optimal $\rho$ value for the $x$ and $y$ attributes are 0.653 and 0.70, respectively.
-\begin{Verbatim}[fontsize=\footnotesize]
-library(dplyr)
-
-psc <- psc %>%
-  mutate(x_SAVF_score = SAVF_score(x_attribute, 1, 5, 0.653),
-         y_SAVF_score = SAVF_score(y_attribute, 1, 10, 0.70))
-
-psc
-## # A tibble: 200 x 5
-##      PSC x_attribute y_attribute x_SAVF_score y_SAVF_score
-##    <chr>       <dbl>       <dbl>        <dbl>        <dbl>
-## 1   D233        3.01        4.84    0.7887459    0.9336977
-## 2   F352        4.34        5.64    0.9573299    0.9629164
-## 3   T713        3.37        4.30    0.8495938    0.9023958
-## 4   K833        2.67        5.53    0.7165401    0.9598009
-## 5   Q121        3.48        4.33    0.8655080    0.9044624
-## 6   C791        3.32        7.32    0.8419735    0.9898314
-## 7   Y207        3.48        5.42    0.8655080    0.9564360
-## 8   W439        2.47        3.35    0.6659448    0.8084720
-## 9   N290        1.66        4.02    0.3778582    0.8808636
-## 10  C251        1.00        7.47    0.0000000    0.9910284
-## # ... with 190 more rows
-\end{Verbatim}
+% \begin{Verbatim}[fontsize=\footnotesize]
+% library(dplyr)
+% 
+% psc <- psc %>%
+%   mutate(x_SAVF_score = SAVF_score(x_attribute, 1, 5, 0.653),
+%          y_SAVF_score = SAVF_score(y_attribute, 1, 10, 0.70))
+% 
+% psc
+% ## # A tibble: 200 x 5
+% ##      PSC x_attribute y_attribute x_SAVF_score y_SAVF_score
+% ##    <chr>       <dbl>       <dbl>        <dbl>        <dbl>
+% ## 1   D233        3.01        4.84    0.7887459    0.9336977
+% ## 2   F352        4.34        5.64    0.9573299    0.9629164
+% ## 3   T713        3.37        4.30    0.8495938    0.9023958
+% ## 4   K833        2.67        5.53    0.7165401    0.9598009
+% ## 5   Q121        3.48        4.33    0.8655080    0.9044624
+% ## 6   C791        3.32        7.32    0.8419735    0.9898314
+% ## 7   Y207        3.48        5.42    0.8655080    0.9564360
+% ## 8   W439        2.47        3.35    0.6659448    0.8084720
+% ## 9   N290        1.66        4.02    0.3778582    0.8808636
+% ## 10  C251        1.00        7.47    0.0000000    0.9910284
+% ## # ... with 190 more rows
+% \end{Verbatim}
+\begin{figure}[!htb]
+  \includegraphics[width=0.5\textwidth]{code8.png}
+\end{figure}
 
 Now that we have the normalized $x$ and $y$ attribute utility scores that align to our leadership's preference structure, we can proceed with plotting each PSC within the Kraljic matrix with the kraljic\_matrix function.
-\begin{Verbatim}[fontsize=\footnotesize]
-kraljic_matrix(psc, x_SAVF_score, y_SAVF_score)
-\end{Verbatim}
+% \begin{Verbatim}[fontsize=\footnotesize]
+% kraljic_matrix(psc, x_SAVF_score, y_SAVF_score)
+% \end{Verbatim}
+\begin{figure}[!htb]
+  \includegraphics[width=0.5\textwidth]{code9.png}
+\end{figure}
 
 \begin{figure}[!htb]
   \includegraphics[width=0.5\textwidth]{fig5.png}
@@ -331,24 +357,27 @@ kraljic_matrix(psc, x_SAVF_score, y_SAVF_score)
 \end{figure}
 
 This illustrates that most of our PSCs fall in the "Leverage" (upper left) quadrant while a few fall in the "Strategic" (upper right) and "Non-critical" (lower left) quadrants and no PSCs fall in the "Bottleneck" quadrant. Keep in mind that each category benefits from a different strategic sourcing approach. Consequently, decision-makers benefit from understanding specifically which products and services align to each so that they can coordinate the appropriate sourcing strategy for that particular product or service. We can easily do this with the kraljic\_quadrant function.
-\begin{Verbatim}[fontsize=\footnotesize]
-psc %>%
-  mutate(quadrant = kraljic_quadrant(x_SAVF_score, y_SAVF_score))
-## # A tibble: 200 x 6
-##      PSC x_attribute y_attribute x_SAVF_score y_SAVF_score  quadrant
-##    <chr>       <dbl>       <dbl>        <dbl>        <dbl>     <chr>
-## 1   D233        3.01        4.84    0.7887459    0.9336977  Leverage
-## 2   F352        4.34        5.64    0.9573299    0.9629164  Leverage
-## 3   T713        3.37        4.30    0.8495938    0.9023958  Leverage
-## 4   K833        2.67        5.53    0.7165401    0.9598009  Leverage
-## 5   Q121        3.48        4.33    0.8655080    0.9044624  Leverage
-## 6   C791        3.32        7.32    0.8419735    0.9898314  Leverage
-## 7   Y207        3.48        5.42    0.8655080    0.9564360  Leverage
-## 8   W439        2.47        3.35    0.6659448    0.8084720  Leverage
-## 9   N290        1.66        4.02    0.3778582    0.8808636 Strategic
-## 10  C251        1.00        7.47    0.0000000    0.9910284 Strategic
-## # ... with 190 more rows
-\end{Verbatim}
+% \begin{Verbatim}[fontsize=\footnotesize]
+% psc %>%
+%   mutate(quadrant = kraljic_quadrant(x_SAVF_score, y_SAVF_score))
+% ## # A tibble: 200 x 6
+% ##      PSC x_attribute y_attribute x_SAVF_score y_SAVF_score  quadrant
+% ##    <chr>       <dbl>       <dbl>        <dbl>        <dbl>     <chr>
+% ## 1   D233        3.01        4.84    0.7887459    0.9336977  Leverage
+% ## 2   F352        4.34        5.64    0.9573299    0.9629164  Leverage
+% ## 3   T713        3.37        4.30    0.8495938    0.9023958  Leverage
+% ## 4   K833        2.67        5.53    0.7165401    0.9598009  Leverage
+% ## 5   Q121        3.48        4.33    0.8655080    0.9044624  Leverage
+% ## 6   C791        3.32        7.32    0.8419735    0.9898314  Leverage
+% ## 7   Y207        3.48        5.42    0.8655080    0.9564360  Leverage
+% ## 8   W439        2.47        3.35    0.6659448    0.8084720  Leverage
+% ## 9   N290        1.66        4.02    0.3778582    0.8808636 Strategic
+% ## 10  C251        1.00        7.47    0.0000000    0.9910284 Strategic
+% ## # ... with 190 more rows
+% \end{Verbatim}
+\begin{figure}[!htb]
+  \includegraphics[width=0.5\textwidth]{code10.png}
+\end{figure}
 An analyst can now easily filter for those PSCs that fall in a specific quadrant.  Lastly, it is important to keep in mind that decision-makers may weight the importance of each attribute differently. Due to certain market environments, decision-makers may weight the $x$ attribute (i.e., supply risk) of greater importance than the $y$ attribute (i.e., profit impact) or vice versa.  One approach used in the extant literature is importance weighting (i.e., see \citet{oe97,lx08,pwa12}.  However, importance weights do not take into account the range between the least- and most-preferred options on each attribute (see Winterfeldt and Edwards, 1993).  Rather, swing weighting has become a common approach to more accurately capture the importance trade-space of given attributes \citep{pbtj13}. There is a unique difference between importance weighting and swing weighting. "Importance weights are used to reflect the general importance of one attribute over another...without regard to...the difference between the worst and the best value points of each attribute" \citep[p. 200]{wb87}. Watson and Buede further state that "when this difference from worst to best is not explicitly referenced in assessing weights, we obtain some general notion of importance, which is subject to great variation and argument among decision-makers" \citep[p. 200]{wb87}. \citet{dpbhc08} argue that "importance weights do not take into account the range between the lowest and the highest levels of the value measures" resulting in the potential for important measures to not be important to the decision. Keeney (2009) adds that "when we quantify objectives by simply asking for their relative importance, considerable misinformation about values is produced and a substantial opportunity to understand values is lost."  However, the use of swing weighting ensures we capture the full value preference structure rather than simply an arbitrary score or at best a hierarchy of importance. Swing weighting also protects against the potential for loss of information, misunderstanding of decision-maker belief, and even loss of trade-offs between values.  Thus, we can prioritize PSCs based on this preference by applying a multi-attribute value function (MAVF) with swing weights. Swing weight values for $x$ and $y$ attributes ($w_x$ and $w_y$ respectively) are typically elicited from SMEs (for a detailed description of this process see von Winterfeldt and Edwards, 1993). This allows for calculation of the interaction swing weight $w_{xy} = 1 - w_x - w_y$. Thus, we can calculate the MAVF as outlined by \citet{kr93}:
 \begin{equation}
 \label{eqn:2}
@@ -357,73 +386,82 @@ V\left(x, y\right) = w_x v_x\left(x\right) + w_y v_y\left(y\right) + w_{xy} v_x\
 
 We can apply the MAVF\_score function to compute the multi-attribute value score based on $x$ and $y$ attribute utility scores and their respective swing weights. Hence, if through discussions with decision-makers we identify swing weight values of 0.65 and 0.35 for the $x$ and $y$ attributes respectively, we can obtain the computed MAVF score for each PSC:
 
-\begin{Verbatim}[fontsize=\footnotesize]
-psc %>%
-  mutate(MAVF = MAVF_score(x_SAVF_score, y_SAVF_score, 0.65, 0.35))
-## # A tibble: 200 x 6
-##      PSC x_attribute y_attribute x_SAVF_score y_SAVF_score      MAVF
-##    <chr>       <dbl>       <dbl>        <dbl>        <dbl>     <dbl>
-## 1   D233        3.01        4.84    0.7887459    0.9336977 0.8394790
-## 2   F352        4.34        5.64    0.9573299    0.9629164 0.9592852
-## 3   T713        3.37        4.30    0.8495938    0.9023958 0.8680745
-## 4   K833        2.67        5.53    0.7165401    0.9598009 0.8016814
-## 5   Q121        3.48        4.33    0.8655080    0.9044624 0.8791420
-## 6   C791        3.32        7.32    0.8419735    0.9898314 0.8937237
-## 7   Y207        3.48        5.42    0.8655080    0.9564360 0.8973328
-## 8   W439        2.47        3.35    0.6659448    0.8084720 0.7158293
-## 9   N290        1.66        4.02    0.3778582    0.8808636 0.5539101
-## 10  C251        1.00        7.47    0.0000000    0.9910284 0.3468599
-## # ... with 190 more rows
-\end{Verbatim}
+% \begin{Verbatim}[fontsize=\footnotesize]
+% psc %>%
+%   mutate(MAVF = MAVF_score(x_SAVF_score, y_SAVF_score, 0.65, 0.35))
+% ## # A tibble: 200 x 6
+% ##      PSC x_attribute y_attribute x_SAVF_score y_SAVF_score      MAVF
+% ##    <chr>       <dbl>       <dbl>        <dbl>        <dbl>     <dbl>
+% ## 1   D233        3.01        4.84    0.7887459    0.9336977 0.8394790
+% ## 2   F352        4.34        5.64    0.9573299    0.9629164 0.9592852
+% ## 3   T713        3.37        4.30    0.8495938    0.9023958 0.8680745
+% ## 4   K833        2.67        5.53    0.7165401    0.9598009 0.8016814
+% ## 5   Q121        3.48        4.33    0.8655080    0.9044624 0.8791420
+% ## 6   C791        3.32        7.32    0.8419735    0.9898314 0.8937237
+% ## 7   Y207        3.48        5.42    0.8655080    0.9564360 0.8973328
+% ## 8   W439        2.47        3.35    0.6659448    0.8084720 0.7158293
+% ## 9   N290        1.66        4.02    0.3778582    0.8808636 0.5539101
+% ## 10  C251        1.00        7.47    0.0000000    0.9910284 0.3468599
+% ## # ... with 190 more rows
+% \end{Verbatim}
+\begin{figure}[!htb]
+  \includegraphics[width=0.5\textwidth]{code11.png}
+\end{figure}
 
 This allows us to quickly dissect our PSCs. For example, if decision-makers are most concerned with the "Leverage" quadrant but want to assess the top 10 PSCs based on the decision-makers preferences of the attributes, we can efficiently make this assessment with the following code. This identifies the top 10 PSCs that are most likely to benefit from a strategic sourcing approach specifically designed for "Leverage" PSCs.
-\begin{Verbatim}[fontsize=\footnotesize]
-psc %>%
-  mutate(MAVF = MAVF_score(x_SAVF_score, y_SAVF_score, 0.65, 0.35),
-         quadrant = kraljic_quadrant(x_SAVF_score, y_SAVF_score)) %>%
-  filter(quadrant == "Leverage") %>%
-  top_n(10, wt = MAVF)
-## # A tibble: 10 x 7
-##      PSC x_attribute y_attribute x_SAVF_score y_SAVF_score      MAVF
-##    <chr>       <dbl>       <dbl>        <dbl>        <dbl>     <dbl>
-## 1   Y357        5.00        6.55    1.0000000    0.9812541 0.9934389
-## 2   E103        4.46        7.71    0.9665150    0.9927003 0.9756799
-## 3   C432        4.65        6.05    0.9796633    0.9726273 0.9772007
-## 4   P402        5.00        5.82    1.0000000    0.9675243 0.9886335
-## 5   Q255        4.95        6.41    0.9973714    0.9791345 0.9909885
-## 6   H426        5.00        5.58    1.0000000    0.9612468 0.9864364
-## 7   E908        4.75        7.11    0.9859554    0.9879299 0.9866465
-## 8   X634        5.00        5.19    1.0000000    0.9485047 0.9819766
-## 9   O288        5.00        5.00    1.0000000    0.9409177 0.9793212
-## 10  V870        5.00        5.88    1.0000000    0.9689357 0.9891275
-## # ... with 1 more variables: quadrant <chr>
-\end{Verbatim}
+% \begin{Verbatim}[fontsize=\footnotesize]
+% psc %>%
+%   mutate(MAVF = MAVF_score(x_SAVF_score, y_SAVF_score, 0.65, 0.35),
+%          quadrant = kraljic_quadrant(x_SAVF_score, y_SAVF_score)) %>%
+%   filter(quadrant == "Leverage") %>%
+%   top_n(10, wt = MAVF)
+% ## # A tibble: 10 x 7
+% ##      PSC x_attribute y_attribute x_SAVF_score y_SAVF_score      MAVF
+% ##    <chr>       <dbl>       <dbl>        <dbl>        <dbl>     <dbl>
+% ## 1   Y357        5.00        6.55    1.0000000    0.9812541 0.9934389
+% ## 2   E103        4.46        7.71    0.9665150    0.9927003 0.9756799
+% ## 3   C432        4.65        6.05    0.9796633    0.9726273 0.9772007
+% ## 4   P402        5.00        5.82    1.0000000    0.9675243 0.9886335
+% ## 5   Q255        4.95        6.41    0.9973714    0.9791345 0.9909885
+% ## 6   H426        5.00        5.58    1.0000000    0.9612468 0.9864364
+% ## 7   E908        4.75        7.11    0.9859554    0.9879299 0.9866465
+% ## 8   X634        5.00        5.19    1.0000000    0.9485047 0.9819766
+% ## 9   O288        5.00        5.00    1.0000000    0.9409177 0.9793212
+% ## 10  V870        5.00        5.88    1.0000000    0.9689357 0.9891275
+% ## # ... with 1 more variables: quadrant <chr>
+% \end{Verbatim}
+\begin{figure}[!htb]
+  \includegraphics[width=0.5\textwidth]{code12.png}
+\end{figure}
 
 And finally, since our swing weight inputs are subjective in nature, we may wish to perform a sensitivity analysis on these swing weights to see their impact on MAVF scores. The MAVF\_sensitivity function executes a sensitivity analysis by performing a Monte Carlo simulation with 1000 trials for each product or service (row). Each trial randomly selects a weight from a uniform distribution between lower and upper bound swing weight parameters and calculates the multi-attribute utility score. From these trials, summary statistics for each product or service (row) are calculated and reported for the final output. 
-\begin{Verbatim}[fontsize=\footnotesize]
-MAVF_sensitivity(psc,
-                 x = x_SAVF_score,
-                 y = y_SAVF_score,
-                 x_wt_min = 0.55,
-                 x_wt_max = 0.75,
-                 y_wt_min = 0.25,
-                 y_wt_max = 0.45) %>%
-  select(PSC, starts_with("MAVF"))
-## # A tibble: 200 x 8
-##      PSC MAVF_Min MAVF_1st_Q MAVF_Median MAVF_Mean MAVF_3rd_Q MAVF_Max
-##    <chr>    <dbl>      <dbl>       <dbl>     <dbl>      <dbl>    <dbl>
-## 1   D233   0.8148     0.8294      0.8390    0.8392     0.8489   0.8636
-## 2   F352   0.9517     0.9569      0.9590    0.9592     0.9614   0.9667
-## 3   T713   0.8465     0.8609      0.8676    0.8678     0.8744   0.8891
-## 4   K833   0.7718     0.7881      0.8003    0.8013     0.8151   0.8311
-## 5   Q121   0.8590     0.8726      0.8786    0.8789     0.8850   0.8988
-## 6   C791   0.8774     0.8859      0.8928    0.8935     0.9016   0.9099
-## 7   Y207   0.8809     0.8907      0.8970    0.8971     0.9035   0.9134
-## 8   W439   0.6765     0.7017      0.7151    0.7153     0.7285   0.7542
-## 9   N290   0.4951     0.5264      0.5510    0.5532     0.5813   0.6120
-## 10  C251   0.2480     0.2979      0.3414    0.3456     0.3958   0.4458
-## # ... with 190 more rows, and 1 more variables: MAVF_Range <dbl>
-\end{Verbatim}
+% \begin{Verbatim}[fontsize=\footnotesize]
+% MAVF_sensitivity(psc,
+%                  x = x_SAVF_score,
+%                  y = y_SAVF_score,
+%                  x_wt_min = 0.55,
+%                  x_wt_max = 0.75,
+%                  y_wt_min = 0.25,
+%                  y_wt_max = 0.45) %>%
+%   select(PSC, starts_with("MAVF"))
+% ## # A tibble: 200 x 8
+% ##      PSC MAVF_Min MAVF_1st_Q MAVF_Median MAVF_Mean MAVF_3rd_Q MAVF_Max
+% ##    <chr>    <dbl>      <dbl>       <dbl>     <dbl>      <dbl>    <dbl>
+% ## 1   D233   0.8148     0.8294      0.8390    0.8392     0.8489   0.8636
+% ## 2   F352   0.9517     0.9569      0.9590    0.9592     0.9614   0.9667
+% ## 3   T713   0.8465     0.8609      0.8676    0.8678     0.8744   0.8891
+% ## 4   K833   0.7718     0.7881      0.8003    0.8013     0.8151   0.8311
+% ## 5   Q121   0.8590     0.8726      0.8786    0.8789     0.8850   0.8988
+% ## 6   C791   0.8774     0.8859      0.8928    0.8935     0.9016   0.9099
+% ## 7   Y207   0.8809     0.8907      0.8970    0.8971     0.9035   0.9134
+% ## 8   W439   0.6765     0.7017      0.7151    0.7153     0.7285   0.7542
+% ## 9   N290   0.4951     0.5264      0.5510    0.5532     0.5813   0.6120
+% ## 10  C251   0.2480     0.2979      0.3414    0.3456     0.3958   0.4458
+% ## # ... with 190 more rows, and 1 more variables: MAVF_Range <dbl>
+% \end{Verbatim}
+\begin{figure}[!htb]
+  \includegraphics[width=0.5\textwidth]{code13.png}
+\end{figure}
 
 Although this provides the basic understanding of each KraljicMatrix function, additional information can be found for each function by running ?function (i.e., ?SAVF\_score).  Next, we'll illustrate an operationalization of the KraljicMatrix package. 
 
