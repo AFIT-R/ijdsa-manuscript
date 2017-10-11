@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.27)  5 OCT 2017 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.6.27)  11 OCT 2017 09:53
 entering extended mode
 **./boehmke-ijdsa-2017.tex
 (boehmke-ijdsa-2017.tex
@@ -403,9 +403,6 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 135--136
 [][] 
  []
 
-
-Package natbib Warning: Citation `lc17' on page 2 undefined on input line 140.
-
 [2]
 Overfull \hbox (6.0085pt too wide) in paragraph at lines 148--149
 \OT1/cmr/m/n/10 tech-nol-ogy adop-tion while be-ing con-strained by re-sources
@@ -445,7 +442,7 @@ Overfull \hbox (0.5363pt too wide) in paragraph at lines 174--175
 [],
  []
 
-<kraljic-matrix.png, id=245, 338.01282pt x 228.10219pt>
+<kraljic-matrix.png, id=248, 338.01282pt x 228.10219pt>
 File: kraljic-matrix.png Graphic file (type png)
 
 <use kraljic-matrix.png>
@@ -461,7 +458,7 @@ Overfull \hbox (9.78622pt too wide) in paragraph at lines 182--183
 \OT1/cmr/m/n/10 How-ever, one of the KPM's main cri-tiques re-volves around
  []
 
-[4 <./kraljic-matrix.png>] <code1.png, id=308, 2173.52025pt x 65.043pt>
+[4 <./kraljic-matrix.png>] <code1.png, id=311, 2173.52025pt x 65.043pt>
 File: code1.png Graphic file (type png)
 
 <use code1.png>
@@ -472,7 +469,7 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 199--200
 [][] 
  []
 
-<code2.png, id=309, 2173.52025pt x 258.9675pt>
+<code2.png, id=312, 2173.52025pt x 258.9675pt>
 File: code2.png Graphic file (type png)
  <use code2.png>
 Package pdftex.def Info: code2.png used on input line 207.
@@ -482,7 +479,7 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 207--208
 [][] 
  []
 
-<code3.png, id=310, 2173.52025pt x 65.043pt>
+<code3.png, id=313, 2173.52025pt x 65.043pt>
 File: code3.png Graphic file (type png)
  <use code3.png>
 Package pdftex.def Info: code3.png used on input line 214.
@@ -498,7 +495,7 @@ Overfull \hbox (0.11775pt too wide) in paragraph at lines 194--236
 0 ). To in-stall the
  []
 
-<code4.png, id=311, 2173.52025pt x 1020.2115pt>
+<code4.png, id=314, 2173.52025pt x 1020.2115pt>
 File: code4.png Graphic file (type png)
  <use code4.png>
 Package pdftex.def Info: code4.png used on input line 257.
@@ -514,7 +511,7 @@ Overfull \hbox (0.20175pt too wide) in paragraph at lines 260--261
  []
 
 [5 <./code1.png> <./code2.png> <./code3.png> <./code4.png>]
-<code5.png, id=338, 2173.52025pt x 432.4155pt>
+<code5.png, id=341, 2173.52025pt x 432.4155pt>
 File: code5.png Graphic file (type png)
  <use code5.png>
 Package pdftex.def Info: code5.png used on input line 277.
@@ -524,7 +521,7 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 277--278
 [][] 
  []
 
-<code6.png, id=339, 2173.52025pt x 358.941pt>
+<code6.png, id=342, 2173.52025pt x 358.941pt>
 File: code6.png Graphic file (type png)
  <use code6.png>
 Package pdftex.def Info: code6.png used on input line 289.
@@ -534,7 +531,7 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 289--290
 [][] 
  []
 
-<fig3.png, id=340, 433.62pt x 216.81pt>
+<fig3.png, id=343, 433.62pt x 216.81pt>
 File: fig3.png Graphic file (type png)
  <use fig3.png>
 Package pdftex.def Info: fig3.png used on input line 293.
@@ -544,7 +541,7 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 293--294
 [][] 
  []
 
-<code7.png, id=341, 2173.52025pt x 420.97275pt>
+<code7.png, id=344, 2173.52025pt x 420.97275pt>
 File: code7.png Graphic file (type png)
  <use code7.png>
 Package pdftex.def Info: code7.png used on input line 308.
@@ -554,7 +551,7 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 308--309
 [][] 
  []
 
-<fig4.png, id=342, 433.62pt x 216.81pt>
+<fig4.png, id=345, 433.62pt x 216.81pt>
 File: fig4.png Graphic file (type png)
  <use fig4.png>
 Package pdftex.def Info: fig4.png used on input line 312.
@@ -567,7 +564,7 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 312--313
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./code5.png> <./code6.png>] <code8.png, id=356, 2173.52025pt x 1419.50325p
+ [6 <./code5.png> <./code6.png>] <code8.png, id=359, 2173.52025pt x 1419.50325p
 t>
 File: code8.png Graphic file (type png)
 
@@ -579,7 +576,7 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 342--343
 [][] 
  []
 
-<code9.png, id=357, 2173.52025pt x 130.086pt>
+<code9.png, id=360, 2173.52025pt x 130.086pt>
 File: code9.png Graphic file (type png)
  <use code9.png>
 Package pdftex.def Info: code9.png used on input line 350.
@@ -594,7 +591,7 @@ Overfull \hbox (1.59065pt too wide) in paragraph at lines 345--352
 \OT1/cmr/m/n/10 struc-ture, we can pro-ceed with plot-ting each PSC within
  []
 
-<fig5.png, id=358, 505.89pt x 361.35pt>
+<fig5.png, id=361, 505.89pt x 361.35pt>
 File: fig5.png Graphic file (type png)
  <use fig5.png>
 Package pdftex.def Info: fig5.png used on input line 354.
@@ -604,7 +601,7 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 354--355
 [][] 
  []
 
-<code10.png, id=359, 2173.52025pt x 1037.67674pt>
+<code10.png, id=362, 2173.52025pt x 1037.67674pt>
 File: code10.png Graphic file (type png)
  <use code10.png>
 Package pdftex.def Info: code10.png used on input line 379.
@@ -615,7 +612,7 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 379--380
  []
 
 [7 <./fig3.png> <./code7.png> <./fig4.png> <./code8.png> <./code9.png> <./fig5.
-png> <./code10.png>] <code11.png, id=391, 2173.52025pt x 987.69pt>
+png> <./code10.png>] <code11.png, id=394, 2173.52025pt x 987.69pt>
 File: code11.png Graphic file (type png)
 
 <use code11.png>
@@ -626,7 +623,7 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 408--409
 [][] 
  []
 
-<code12.png, id=392, 2173.52025pt x 1172.58075pt>
+<code12.png, id=395, 2173.52025pt x 1172.58075pt>
 File: code12.png Graphic file (type png)
  <use code12.png>
 Package pdftex.def Info: code12.png used on input line 434.
@@ -636,7 +633,7 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 434--435
 [][] 
  []
 
-<code13.png, id=393, 2173.52025pt x 1408.0605pt>
+<code13.png, id=396, 2173.52025pt x 1408.0605pt>
 File: code13.png Graphic file (type png)
  <use code13.png>
 Package pdftex.def Info: code13.png used on input line 463.
@@ -683,7 +680,7 @@ Overfull \hbox (3.73068pt too wide) in paragraph at lines 496--497
 []$\OT1/cmr/m/n/10 . There-fore, us-ing this in-for-ma-tion we could
  []
 
-<fig6.png, id=413, 1942.25626pt x 1121.69063pt>
+<fig6.png, id=416, 1942.25626pt x 1121.69063pt>
 File: fig6.png Graphic file (type png)
  <use fig6.png>
 Package pdftex.def Info: fig6.png used on input line 499.
@@ -697,7 +694,7 @@ Overfull \hbox (8.53583pt too wide) in paragraph at lines 499--500
 
 pdfTeX warning: pdflatex.exe (file ./fig6.png): large interlaced PNG might caus
 e out of memory (use non-interlaced PNG to fix this)
->] <fig7.png, id=426, 1168.365pt x 770.88pt>
+>] <fig7.png, id=429, 1168.365pt x 770.88pt>
 File: fig7.png Graphic file (type png)
  <use fig7.png>
 Package pdftex.def Info: fig7.png used on input line 507.
@@ -717,7 +714,7 @@ Overfull \hbox (3.31403pt too wide) in paragraph at lines 544--545
 \OT1/cmr/m/n/10 by mis-sion im-pact but also by bud-get con-straints. There-
  []
 
-<fig8.png, id=427, 1365.60187pt x 591.71063pt>
+<fig8.png, id=430, 1365.60187pt x 591.71063pt>
 File: fig8.png Graphic file (type png)
  <use fig8.png>
 Package pdftex.def Info: fig8.png used on input line 547.
@@ -753,12 +750,12 @@ t,
  []
 
 [11] (boehmke-ijdsa-2017.bbl
-Underfull \hbox (badness 1173) in paragraph at lines 65--68
+Underfull \hbox (badness 1173) in paragraph at lines 69--72
 \OT1/cmr/m/n/10 ing for suc-cess-ful ca-reer in big data and busi-
  []
 
 
-Underfull \hbox (badness 1102) in paragraph at lines 106--108
+Underfull \hbox (badness 1102) in paragraph at lines 110--112
 \OT1/cmr/m/n/10 demic pro-grams in busi-ness an-a-lyt-ics. In-ter-faces
  []
 
@@ -766,12 +763,12 @@ Underfull \hbox (badness 1102) in paragraph at lines 106--108
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [12]
-Underfull \hbox (badness 1571) in paragraph at lines 181--183
+Underfull \hbox (badness 1571) in paragraph at lines 185--187
 []\OT1/cmr/m/n/10 McAfee A, Bryn-jolf-s-son E (2012) Big data: The
  []
 
 
-Underfull \hbox (badness 1348) in paragraph at lines 203--205
+Underfull \hbox (badness 1348) in paragraph at lines 207--209
 []\OT1/cmr/m/n/10 O'Mahony S (2003) Guard-ing the com-mons: how
  []
 
@@ -782,10 +779,8 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [13])
-
-Package natbib Warning: There were undefined citations.
-
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 617.
+
 [14
 
 ]
@@ -798,10 +793,10 @@ Package rerunfilecheck Info: File `boehmke-ijdsa-2017.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 617.
  ) 
 Here is how much of TeX's memory you used:
- 6958 strings out of 493323
- 104375 string characters out of 3128713
- 200142 words of memory out of 3000000
- 10320 multiletter control sequences out of 15000+200000
+ 6961 strings out of 493323
+ 104410 string characters out of 3128713
+ 200166 words of memory out of 3000000
+ 10322 multiletter control sequences out of 15000+200000
  10515 words of font info for 37 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  28i,12n,33p,2651b,531s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -823,9 +818,9 @@ ublic/amsfonts/cm/cmsy10.pfb><C:/Users/greenweb/AppData/Local/Programs/MiKTeX 2
 .9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/greenweb/AppData/Local/Pr
 ograms/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/greenweb/
 AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on boehmke-ijdsa-2017.pdf (14 pages, 1898912 bytes).
+Output written on boehmke-ijdsa-2017.pdf (14 pages, 1901475 bytes).
 PDF statistics:
- 549 PDF objects out of 1000 (max. 8388607)
- 108 named destinations out of 1000 (max. 500000)
+ 556 PDF objects out of 1000 (max. 8388607)
+ 109 named destinations out of 1000 (max. 500000)
  154 words of extra memory for PDF output out of 10000 (max. 10000000)
 
