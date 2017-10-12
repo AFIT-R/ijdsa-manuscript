@@ -89,7 +89,7 @@
 \begin{abstract}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-Data science has emerged as a significant capability upon which firms compete. Although many data scientists and the high-performing companies that employ them seem to have developed robust methods to employ data sciences practices to achieve competitive advantages, there have been few attempts at defining and explaining how and why data science helps firms to achieve desired outcomes.  In this paper, we describe how data science, which combines computer programming, domain knowledge, and analytic skillsets to scientifically extract insights from data, can be used to help meet the growing demand of analytic needs across an organization's value chain. This is done through the illustration of an applied data science initiative to a strategic sourcing problem via the use of open-source technology. In doing so, we contribute to the growing data science literature by demonstrating the application of unique data science capabilities. Moreover, the paper provides a tutorial on how to use a specific R package along with an actual case in which that package use used.
+Data science has emerged as a significant capability upon which firms compete. Although many data scientists and the high-performing companies that employ them seem to have developed robust methods to employ data science practices to achieve competitive advantages, there have been few attempts at defining and explaining how and why data science helps firms to achieve desired outcomes.  In this paper, we describe how data science, which combines computer programming, domain knowledge, and analytic skillsets to scientifically extract insights from data, can be used to help meet the growing demand of analytic needs across an organization's value chain. This is done through the illustration of an applied data science initiative to a strategic sourcing problem via the use of open-source technology. In doing so, we contribute to the growing data science literature by demonstrating the application of unique data science capabilities. Moreover, the paper provides a tutorial on how to use a specific R package along with an actual case in which that package was used.
 
 \keywords{Data Science \and Purchasing portfolio \and Supply chain management \and Open source \and R programming \and Decision support}
 
@@ -195,7 +195,7 @@ KraljicMatrix \citep{bmof17} is an R package developed by the authors to provide
 % \begin{Verbatim}[fontsize=\footnotesize]
 % install.packages("KraljicMatrix")
 % \end{Verbatim}
-\begin{figure}[!htb]
+\begin{figure}[H]
   \includegraphics[width=0.5\textwidth]{code1.png}
 \end{figure}
 within the R operating environment. To download the development version, which is hosted on GitHub, run:
@@ -203,14 +203,14 @@ within the R operating environment. To download the development version, which i
 % library(devtools)
 % install_github("AFIT-R/KraljicMatrix")
 % \end{Verbatim}
-\begin{figure}[!htb]
+\begin{figure}[H]
   \includegraphics[width=0.5\textwidth]{code2.png}
 \end{figure}
 Now that the package is downloaded, we load the KraljicMatrix package in our current R environment to allow access to the functions:
 % \begin{Verbatim}[fontsize=\footnotesize]
 % library(KraljicMatrix)
 % \end{Verbatim}
-\begin{figure}[!htb]
+\begin{figure}[H]
   \includegraphics[width=0.5\textwidth]{code3.png}
 \end{figure}
 The KraljicMatrix package has eight functions to aid analysts in performing a KPM analysis:
@@ -222,14 +222,14 @@ The KraljicMatrix package has eight functions to aid analysts in performing a KP
     \hline\noalign{\smallskip}
     Function & Purpose  \\
     \noalign{\smallskip}\hline\noalign{\smallskip}
-    SAVF\_score & Computes a utility score based on an exponential single attribute value function. \\
-    SAVF\_preferred\_rho & Computes the preferred rho that minimizes the squared error between subject matter inputs and exponentially fitted utility scores. \\
-    SAVF\_plot\_rho\_error & Plots the squared error terms for the rho search space to illustrate the preferred rho that minimizes the squared error between subject matter desired values and exponentially fitted scores. \\
-    SAVF\_plot & Plots the single attribute utility curve along with the subject matter desired values for comparison. \\
-    MAVF\_score & Computes the muti-attribute value score based on $x$ and $y$ attribute utility scores and their respective weights. \\
-    MAVF\_sensitivity & Computes summary statistics for multi-attribute value scores for $x$ and $y$ given a range of swing weights for each attribute. \\
-    kraljic\_quadrant & Identifies the Kraljic purchasing matrix quadrant for each product or service based on the attribute utility scores of $x$ and y. \\
-    kraljic\_matrix & Plots each product or service in the Kraljic purchasing matrix based on the attribute value score of $x$ and y. \\
+    \texttt{SAVF\_score} & Computes a utility score based on an exponential single attribute value function. \\
+    \texttt{SAVF\_preferred\_rho} & Computes the preferred rho that minimizes the squared error between subject matter inputs and exponentially fitted utility scores. \\
+    \texttt{\texttt{SAVF\_plot}\_rho\_error} & Plots the squared error terms for the rho search space to illustrate the preferred rho that minimizes the squared error between subject matter desired values and exponentially fitted scores. \\
+    \texttt{SAVF\_plot} & Plots the single attribute utility curve along with the subject matter desired values for comparison. \\
+    \texttt{MAVF\_score} & Computes the muti-attribute value score based on $x$ and $y$ attribute utility scores and their respective weights. \\
+    \texttt{MAVF\_sensitivity} & Computes summary statistics for multi-attribute value scores for $x$ and $y$ given a range of swing weights for each attribute. \\
+    \texttt{kraljic\_quadrant} & Identifies the Kraljic purchasing matrix quadrant for each product or service based on the attribute utility scores of $x$ and y. \\
+    \texttt{kraljic\_matrix} & Plots each product or service in the Kraljic purchasing matrix based on the attribute value score of $x$ and y. \\
     \noalign{\smallskip}\hline
   \end{tabular}
 \end{table*}
@@ -263,7 +263,7 @@ First, we must remember that the KPM merely plots products and services on an $x
 v_x\left(x_i\right) = \frac{1 - \exp\left(-\left(x_i - x^0\right)\right) / \rho_x}{1 - \exp\left(-\left(x^* - x^0\right)\right) / \rho_x}, \quad \forall i \in A.
 \end{equation}
 
-After solving the single attribute value function for both $x$ and $y$ attributes, we obtain a $\left[v_x\left(x_i\right), v_y\left(y_i\right)\right]$ ordered pair for each service or product to be plotted in the KPM.  However, prior to applying the SAVF to our $x$ and $y$ attributes we must first identify the appropriate $\rho$ value. The benefit of applying an exponential SAVF is that it can take on many forms of increasing rates, along with aligning to a linear value function. Consequently, if certain $x$ attribute values are valued more than other values an exponential SAVF will capture this utility curve. To identify the appropriate exponential rate, subject matter expert (SME) inputs are typically evaluated and an exponential rate that most closely matches the preferred values provided by the SMEs is chosen. Thus, let's assume for our given $x$ attribute the SME inputs suggest that $x$ attribute values of 3, 4, and 5 provide a utility score of 0.80, 0.90, and 1.0 respectively (this represents a decreasing rate of return utility curve). Knowing that our $x$ attribute is bounded between 1 and 5 we can search for a $\rho$ value between 0 and 1 that provides the best-fit utility function using the SAVF\_preferred\_rho function.  Best-fit is measured by minimizing the sum of squared residuals ($S = \sum_{i = 1}^n r_i ^ 2$).
+After solving the single attribute value function for both $x$ and $y$ attributes, we obtain a $\left[v_x\left(x_i\right), v_y\left(y_i\right)\right]$ ordered pair for each service or product to be plotted in the KPM.  However, prior to applying the SAVF to our $x$ and $y$ attributes we must first identify the appropriate $\rho$ value. The benefit of applying an exponential SAVF is that it can take on many forms of increasing rates, along with aligning to a linear value function. Consequently, if certain $x$ attribute values are valued more than other values an exponential SAVF will capture this utility curve. To identify the appropriate exponential rate, subject matter expert (SME) inputs are typically evaluated and an exponential rate that most closely matches the preferred values provided by the SMEs is chosen. Thus, let's assume for our given $x$ attribute the SME inputs suggest that $x$ attribute values of 3, 4, and 5 provide a utility score of 0.80, 0.90, and 1.0 respectively (this represents a decreasing rate of return utility curve). Knowing that our $x$ attribute is bounded between 1 and 5 we can search for a $\rho$ value between 0 and 1 that provides the best-fit utility function using the \texttt{SAVF\_preferred\_rho} function.  Best-fit is measured by minimizing the sum of squared residuals ($S = \sum_{i = 1}^n r_i ^ 2$).
 % \begin{Verbatim}[fontsize=\footnotesize]
 % SAVF_preferred_rho(desired_x = c(3, 4, 5),
 %                    desired_v = c(0.8, 0.9, 1),
@@ -277,7 +277,7 @@ After solving the single attribute value function for both $x$ and $y$ attribute
   \includegraphics[width=0.5\textwidth]{code5.png}
 \end{figure}
 
-Thus, we can see that $\rho = 0.6531$ provides the best-fit exponential SAVF. We can illustrate this two ways. First, we can use SAVF\_plot to plot the single attribute utility curve compared to the subject matter desired values.
+Thus, we can see that $\rho = 0.6531$ provides the best-fit exponential SAVF. We can illustrate this two ways. First, we can use \texttt{SAVF\_plot} to plot the single attribute utility curve compared to the subject matter desired values; see Figure~\ref{fig:3}.
 % \begin{Verbatim}[fontsize=\footnotesize]
 % SAVF_plot(desired_x = c(3, 4, 5),
 %           desired_v = c(0.8, 0.9, 1),
@@ -295,7 +295,7 @@ Thus, we can see that $\rho = 0.6531$ provides the best-fit exponential SAVF. We
   \label{fig:3}
 \end{figure}
 
-We can also visualize the errors of the $\rho$ search space with SAVF\_plot\_rho\_error, which plots the squared error terms for all $\rho$ values within the $\rho$ search space to illustrate the preferred $\rho$ that minimizes the squared error between subject matter desired values and exponentially fitted scores.
+We can also visualize the errors of the $\rho$ search space with \texttt{\texttt{SAVF\_plot}\_rho\_error}, which plots the squared error terms for all $\rho$ values within the $\rho$ search space to illustrate the preferred $\rho$ that minimizes the squared error between subject matter desired values and exponentially fitted scores; see Figure~\ref{fig:4}.
 % \begin{Verbatim}[fontsize=\footnotesize]
 % SAVF_plot_rho_error(desired_x = c(3, 4, 5),
 %                     desired_v = c(.75, 0.9, 1),
@@ -314,7 +314,7 @@ We can also visualize the errors of the $\rho$ search space with SAVF\_plot\_rho
   \label{fig:4}
 \end{figure}
 
-Once we've identified the preferred $\rho$ value, we can now apply the exponential SAVF with SAVF\_score to normalize our attributes based on our utility curve. Here, we assume that the optimal $\rho$ value for the $x$ and $y$ attributes are 0.653 and 0.70, respectively.
+Once we've identified the preferred $\rho$ value, we can now apply the exponential SAVF with \texttt{SAVF\_score} to normalize our attributes based on our utility curve. Here, we assume that the optimal $\rho$ value for the $x$ and $y$ attributes are 0.653 and 0.70, respectively.
 % \begin{Verbatim}[fontsize=\footnotesize]
 % library(dplyr)
 % 
@@ -342,7 +342,7 @@ Once we've identified the preferred $\rho$ value, we can now apply the exponenti
   \includegraphics[width=0.5\textwidth]{code8.png}
 \end{figure}
 
-Now that we have the normalized $x$ and $y$ attribute utility scores that align to our leadership's preference structure, we can proceed with plotting each PSC within the Kraljic matrix with the kraljic\_matrix function.
+Now that we have the normalized $x$ and $y$ attribute utility scores that align to our leadership's preference structure, we can proceed with plotting each PSC within the Kraljic matrix with the \texttt{kraljic\_matrix} function.
 % \begin{Verbatim}[fontsize=\footnotesize]
 % kraljic_matrix(psc, x_SAVF_score, y_SAVF_score)
 % \end{Verbatim}
@@ -352,11 +352,11 @@ Now that we have the normalized $x$ and $y$ attribute utility scores that align 
 
 \begin{figure}[!htb]
   \includegraphics[width=0.5\textwidth]{fig5.png}
-  \caption{kraljic\_matrix function output.}
+  \caption{\texttt{kraljic\_matrix} function output.}
   \label{fig:5}
 \end{figure}
 
-This illustrates that most of our PSCs fall in the "Leverage" (upper left) quadrant while a few fall in the "Strategic" (upper right) and "Non-critical" (lower left) quadrants and no PSCs fall in the "Bottleneck" quadrant. Keep in mind that each category benefits from a different strategic sourcing approach. Consequently, decision-makers benefit from understanding specifically which products and services align to each so that they can coordinate the appropriate sourcing strategy for that particular product or service. We can easily do this with the kraljic\_quadrant function.
+This illustrates that most of our PSCs fall in the "Leverage" (upper left) quadrant while a few fall in the "Strategic" (upper right) and "Non-critical" (lower left) quadrants and no PSCs fall in the "Bottleneck" quadrant. Keep in mind that each category benefits from a different strategic sourcing approach. Consequently, decision-makers benefit from understanding specifically which products and services align to each so that they can coordinate the appropriate sourcing strategy for that particular product or service. We can easily do this with the \texttt{kraljic\_quadrant} function.
 % \begin{Verbatim}[fontsize=\footnotesize]
 % psc %>%
 %   mutate(quadrant = kraljic_quadrant(x_SAVF_score, y_SAVF_score))
@@ -384,7 +384,7 @@ An analyst can now easily filter for those PSCs that fall in a specific quadrant
 V\left(x, y\right) = w_x v_x\left(x\right) + w_y v_y\left(y\right) + w_{xy} v_x\left(x\right)v_y\left(y\right).
 \end{equation}
 
-We can apply the MAVF\_score function to compute the multi-attribute value score based on $x$ and $y$ attribute utility scores and their respective swing weights. Hence, if through discussions with decision-makers we identify swing weight values of 0.65 and 0.35 for the $x$ and $y$ attributes respectively, we can obtain the computed MAVF score for each PSC:
+We can apply the \texttt{MAVF\_score} function to compute the multi-attribute value score based on $x$ and $y$ attribute utility scores and their respective swing weights. Hence, if through discussions with decision-makers we identify swing weight values of 0.65 and 0.35 for the $x$ and $y$ attributes respectively, we can obtain the computed MAVF score for each PSC:
 
 % \begin{Verbatim}[fontsize=\footnotesize]
 % psc %>%
@@ -434,7 +434,7 @@ This allows us to quickly dissect our PSCs. For example, if decision-makers are 
   \includegraphics[width=0.5\textwidth]{code12.png}
 \end{figure}
 
-And finally, since our swing weight inputs are subjective in nature, we may wish to perform a sensitivity analysis on these swing weights to see their impact on MAVF scores. The MAVF\_sensitivity function executes a sensitivity analysis by performing a Monte Carlo simulation with 1000 trials for each product or service (row). Each trial randomly selects a weight from a uniform distribution between lower and upper bound swing weight parameters and calculates the multi-attribute utility score. From these trials, summary statistics for each product or service (row) are calculated and reported for the final output. 
+And finally, since our swing weight inputs are subjective in nature, we may wish to perform a sensitivity analysis on these swing weights to see their impact on MAVF scores. The \texttt{MAVF\_sensitivity} function executes a sensitivity analysis by performing a Monte Carlo simulation with 1000 trials for each product or service (row). Each trial randomly selects a weight from a uniform distribution between lower and upper bound swing weight parameters and calculates the multi-attribute utility score. From these trials, summary statistics for each product or service (row) are calculated and reported for the final output. 
 % \begin{Verbatim}[fontsize=\footnotesize]
 % MAVF_sensitivity(psc,
 %                  x = x_SAVF_score,
@@ -463,7 +463,7 @@ And finally, since our swing weight inputs are subjective in nature, we may wish
   \includegraphics[width=0.5\textwidth]{code13.png}
 \end{figure}
 
-Although this provides the basic understanding of each KraljicMatrix function, additional information can be found for each function by running ?function (i.e., ?SAVF\_score).  Next, we'll illustrate an operationalization of the KraljicMatrix package. 
+Although this provides the basic understanding of each KraljicMatrix function, additional information can be found for each function by running ?function (i.e., ?\texttt{SAVF\_score}).  Next, we'll illustrate an operationalization of the KraljicMatrix package. 
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -493,7 +493,7 @@ To evaluate supply market complexity, AFICA used the IBISWorld Buyer Power Score
 
 \textit{Spend} is defined as the dollars obligated by Air Force contracting agencies. AFICA installation spend data shows that sequestration in FY13 invoked budget cuts of approximately 13\%. However, the FY14 budget for installation spend increased by nearly 6\%. This trend was visible at the most aggregate levels (total USAF and total department spend) down to the most disaggregated levels (installation level spend). Working with senior AF leadership, it was identified that installation commanders are free, to an extent, to exercise judgment in purchasing decisions. Consequently, as FY14 budgets increased, the assumption is that installation commanders applied budget increases first to the installation's most critical goods and services. Thus, we leverage this assumption to deduce which PSCs were most critical to the installation mission by identifying those PSCs that experienced the largest post-sequestration rebound in spend. To do so, we calculate the percent change of spend for each PSC from FY13-14. We also calculate overall installation spend over the same period, compute the deviation between the two, and scaled from 0 to 1.  Therefore, let $Y$ be the delta between the overall installation spend slope and PSC spend slope from FY13 to FY14.
 
-Working with AFICA leadership we identified the preference structure for the $X$ and $Y$ variables to be: $v_x\left(\left\{1, 3, 4, 5\right\}\right) = \left\{0.0, 0.8, 0.9, 1.0\right\}$ and $v_y\left(\left\{-2.0, 0.0, 1.0\right\}\right) = \left\{0.0, 0.9, 1.0\right\}$. Therefore, using this information we could identify the preferred $\rho$ values of 0.653 and 0.933 for $v_x\left(x_i\right)$ and $v_y\left(y_i\right)$ with SAVF\_preferred\_rho and as illustrated with the SAVF\_plot and SAVF\_plot\_rho\_error outputs below.
+Working with AFICA leadership we identified the preference structure for the $X$ and $Y$ variables to be: $v_x\left(\left\{1, 3, 4, 5\right\}\right) = \left\{0.0, 0.8, 0.9, 1.0\right\}$ and $v_y\left(\left\{-2.0, 0.0, 1.0\right\}\right) = \left\{0.0, 0.9, 1.0\right\}$. Therefore, using this information we could identify the preferred $\rho$ values of 0.653 and 0.933 for $v_x\left(x_i\right)$ and $v_y\left(y_i\right)$ with \texttt{SAVF\_preferred\_rho} and as illustrated with the \texttt{SAVF\_plot} and \texttt{\texttt{SAVF\_plot}\_rho\_error} outputs below.
 
 \begin{figure}[!htb]
   \includegraphics[width=0.5\textwidth]{fig6.png}
@@ -501,7 +501,7 @@ Working with AFICA leadership we identified the preference structure for the $X$
   \label{fig:6}
 \end{figure}
 
-Using the identified optimal $\rho$ value for AFICA's preference curve we computed the $x$ and $y$ attribute single attribute values with the SAVF\_score function and then plotted in the KPM with the kraljic\_matrix function.
+Using the identified optimal $\rho$ value for AFICA's preference curve we computed the $x$ and $y$ attribute single attribute values with the \texttt{SAVF\_score} function and then plotted in the KPM with the \texttt{kraljic\_matrix} function.
 
 \begin{figure}[!htb]
   \includegraphics[width=0.5\textwidth]{fig7.png}
@@ -511,9 +511,9 @@ Using the identified optimal $\rho$ value for AFICA's preference curve we comput
 
 The KPM illustrates that nearly all PSCs provided by AFICA fell into the upper left (or "Leverage") quadrant.  The Leverage quadrant identifies those products and services that provide ample opportunity for cost savings by leveraging buying power.  Furthermore, it's important to note that AFICA based their selection of PSCs for this analysis on a specific set of data points they termed Key Performance Indicators, or KPIs. AFICA's KPIs were developed to identify those PSCs with the best opportunity for cost reduction. Thus we should expect to see them in the leverage quadrant. This helped to confirm that AFICA's internal analytic processes accurately identified PSCs ripe for cost reduction; this analysis provided further confirmation. Moreover, in Kraljic's seminal work of 1983, he used an example of a company that positioned 5,000 items. Only 75, or 1.5\% were positioned on the right side of the matrix (the strategic or bottleneck quadrants). Hence, such clustering of sorts is not unusual in the KPM literature. 
 
-We note that two PSCs fall in the non-critical quadrant.  By leveraging the kraljic\_quadrant function and filtering for "Non-critical" we find that these are PSCs Z299 and 5841.  These are two PSCs that AFICA can focus on to improve efficient processes in order to reduce costs.
+We note that two PSCs fall in the non-critical quadrant.  By leveraging the \texttt{kraljic\_quadrant} function and filtering for "Non-critical" we find that these are PSCs Z299 and 5841.  These are two PSCs that AFICA can focus on to improve efficient processes in order to reduce costs.
 
-However, out of the remaining 256 PSCs, the question remains: Where should AFICA begin their efforts for strategic sourcing?  Here we can start to rank order the 256 PSCs that fall in the leverage quadrant with the MAVF\_score function.  Through a structured interview process with AFICA's leadership that followed the procedures discussed in Keeney, Von Winterfeldt, and Eppel (1990), we established a swing weight for the $x$ attribute to be 52\% ($w_x = 0.52$) and the swing weight for the $y$ attribute to be 48\% ($w_y = 0.48$).  Therefore, we can apply the MAVF\_score function to quickly get the top 10 PSCs for AFICA to start focusing their strategic efforts on.  
+However, out of the remaining 256 PSCs, the question remains: Where should AFICA begin their efforts for strategic sourcing?  Here we can start to rank order the 256 PSCs that fall in the leverage quadrant with the \texttt{MAVF\_score} function.  Through a structured interview process with AFICA's leadership that followed the procedures discussed in Keeney, Von Winterfeldt, and Eppel (1990), we established a swing weight for the $x$ attribute to be 52\% ($w_x = 0.52$) and the swing weight for the $y$ attribute to be 48\% ($w_y = 0.48$).  Therefore, we can apply the \texttt{MAVF\_score} function to quickly get the top 10 PSCs for AFICA to start focusing their strategic efforts on.  
 
 \begin{table*}[!htb]
   % table caption is above the table
@@ -539,9 +539,9 @@ However, out of the remaining 256 PSCs, the question remains: Where should AFICA
   \end{tabular}
 \end{table*}
 
-To check the variability of the ranking based on the swing weights we performed a sensitivity analysis via MAVF\_sensitivity allowing each swing weight to vary by $\pm 10$ (thus, $w_x = \left[0.42, 0.62\right]$ and $w_y = \left[0.38, 0.58\right]$).  The same top 10 PSCs were observed in the sensitivity analysis.  In fact the same PSCs were consistently ranked in the top 25 with only minor differences in the rank-order of PSCs in the lower half of this ranked set.  Therefore, these PSC represent those with the perceived greatest net impact to the Air Force mission and can be considered the most likely candidates for AFICA to start applying commercial best practice strategies to reduce costs.
+To check the variability of the ranking based on the swing weights we performed a sensitivity analysis via \texttt{MAVF\_sensitivity} allowing each swing weight to vary by $\pm 10$ (thus, $w_x = \left[0.42, 0.62\right]$ and $w_y = \left[0.38, 0.58\right]$).  The same top 10 PSCs were observed in the sensitivity analysis.  In fact the same PSCs were consistently ranked in the top 25 with only minor differences in the rank-order of PSCs in the lower half of this ranked set.  Therefore, these PSC represent those with the perceived greatest net impact to the Air Force mission and can be considered the most likely candidates for AFICA to start applying commercial best practice strategies to reduce costs.
 
-However, it is worth mentioning that non-profit organizations such as the Air Force are often very cost sensitive.  Many times their efforts are driven not only by mission impact but also by budget constraints.  Therefore, we can gain further insights by assessing the cost-benefit trade space.   To do so, we plot each PSC relative to their five-year average cost and MAVF score as displayed in Figure 3 
+However, it is worth mentioning that non-profit organizations such as the Air Force are often very cost sensitive.  Many times their efforts are driven not only by mission impact but also by budget constraints.  Therefore, we can gain further insights by assessing the cost-benefit trade space.   To do so, we plot each PSC relative to their five-year average cost and MAVF score as displayed in Figure~\ref{fig:8}. 
 
 \begin{figure}[!htb]
   \includegraphics[width=0.5\textwidth]{fig8.png}
